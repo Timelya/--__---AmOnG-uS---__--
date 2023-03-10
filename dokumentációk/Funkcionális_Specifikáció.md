@@ -98,7 +98,20 @@ A vágyálom rendszer azért felelős, hogy kifejtsük benne mit szeretnénk cé
 ## 2.2 Rendszer szereplői
 ![Rendszer szereplői diagram negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Rendszer%20szereplői%20diagram%20negativ.jpg)
 
-  
-  
+# 3. Funkció - követelmény megfeleltetése
+Itt kezdje el a teljes rendszerre vonatkozó specifikációk leírását. Ismertetett összes funkcióról, és linkelheti őket az alábbi tételekhez.
+
+| Modul       | ID  | Név                    | Kifejtés                                                                                                                                               |
+|-------------|-----|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Jogosultság | K1  | Bejelentkezési felület | A felhasználó bejelentkezhet email címmel és jelszóval. Ha a megadott email cím vagy jelszó nem megfelelő, akkor a felhasználó hibaüzenetet kap.   |
+| Jogosultság | K2  | Regisztráció           |    Felhasználónév, email cím és jelszó megadásával regisztrálja magát a felhasználó. A jelszó tárolása kódolva történik az adatbázisban. Ha valamelyik adat ezek közül hiányzik vagy nem felel meg a követelményeknek, akkor a rendszer értesíti erről a felhasználót.|
+| Jogosultság | K3  | Jogosultsági szintek   |*Admin:* más felhasználók törlése, adminná tétele, admin jog elvétele és más rendezvények törlése valamint minden olyan dolog amit a felhasználó is tud. *Felhasználó:* meghívó küldése, meghívó elfogadása, rendezvény létrehozása, profil szerkesztése, rendezvény létrehozása és törlése. |
+| Modifikáció | K4  | Felhasználó módosítása | A felhasználó módosítani tudja saját Felhasználónevét. |
+| Modifikáció | K5  | Jelszó módosítása      |   A felhasználó módosítani tudja saját jelszavát. |
+| Jogosultság | K6  | Admin felület          | Felület az admin fiókkal rendelkező felhasználó számára.|
+| Felület     | K7  | Rendezvény létrehozása | A felhasználó tud rendezvényeket létrehozni|
+| Felület     | K8  | Rendezvény törlése     | A felhasználó képes saját rendezvényeinek törlésére.|
+| Felület     | K9  | Meghívó küldése        | A felhasználó megtud hívni más felhasználókat a rendezvényeire.|
+| Felület     | K10 | Meghívó elfogadása     | A felhasználó képes elfogadni a más felhasználók által küldött meghívókat.|
   
   
