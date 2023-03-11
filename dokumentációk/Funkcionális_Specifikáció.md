@@ -119,3 +119,17 @@ Itt kezdje el a teljes rendszerre vonatkozó specifikációk leírását. Ismert
 Napjainkban nagyon kevés a jól szervezett és könnyen kezelhető rendezvény létrehozó oldal. Ezért hoztuk létre oldalunk ahol a letisztult felület valamint a nem túlbonyolított rendszer adotta lehetőségeknek kösszönhetően lehetőség van rendezvények létrehozására és meghívók küldésére másik felhasználók számára. Gyorsan és könnyedén. <br>
 ![BPMN negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/BPMN%20negativ.jpg)
   
+# 5. Igényelt üzleti folyamatok modellje
+|![Fázisok és unkafolyamatok negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Fázisok%20és%20unkafolyamatok%20negativ.jpg)|
+|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
+<p align="center"> ▂▃▅▇█▓▒░۩۞۩                    ۩۞۩░▒▓█▇▅▃▂</p>
+<p align="center"><br>Azért, hogy megkönnyítsük az emberek életét létre hoztunk egy rendezvények kezelésére alkalmas oldalt. Mely kellően egyszerűen kezelhető azért hogy bármely generáció megérthesse és kezelni tudja. Az idősek és fiatalok is egyaránt tudnak rendezvényeket gyermeki könnyedséggel létrehozni és barátaik meghívni arra, hogy naprakészek maradjanak az események kapcsán.</p>
+<p align="center"> ▂▃▅▇█▓▒░۩۞۩                    ۩۞۩░▒▓█▇▅▃▂</p>
+
+
+|![Erőforrás igény negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Erőforrás%20igény%20negativ.jpg)|
+|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
