@@ -177,3 +177,23 @@ Ez leírja, hogy melyik felhasználó milyen funkciókat tud használni. Az olda
 <h3 align="center"> Elvárt/ideális statisztika az oldal elkészülése után:</>
  
 ![kör diagram.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/kör%20diagram.png)
+
+# 10. Forgatókönyvek
+A forgatókönyvek bemutatják, hogyan alkalmazható ez a technológia az üzleti célok megvalósítása és problémák megoldása érdekében.
+  * Adminisztrátori forgatókönyvek:<br>
+    * olyan speciális feladatokat mutatnak be, amelyeket adminisztratív szerepkörrel rendelkező felhasználók végeznek el<br>
+* Szolgáltatástulajdonosi forgatókönyvek<br>
+    * olyan speciális feladatokat mutatnak be, amelyeket szolgáltatástulajdonosok végeznek el<br>
+* Nem adminisztrációs felhasználói forgatókönyvek<br>
+    * egy nem adminisztratív felhasználó által elvégezhető egyszerű feladatok egy részét ismertetik<br>
+* Vezetői forgatókönyvek<br>
+    * egy vezető által elvégezhető egyszerű adminisztrációs feladatok egy részét ismertetik<br>
+* Identity Manager Service Center-forgatókönyvek<br>
+    * egy vezető vagy egy képviselő által elvégezhető feladatok egy részét ismertetik<br>
+* Segélyszolgálat-forgatókönyvek<br>
+    * egy segélyszolgálat-munkatárs által elvégezhető adminisztrációs feladatok egy részét ismertetik<br>
+* Auditori forgatókönyvek<br>
+    * egy auditor által adminisztrációs feladatok egy részét ismertetik<br><br>
+
+Az oldalunk kettő ilyen forgatókönnyel rendelkezik a felhasználóval és az adminisztrátorival.<br>
+Futási időben három szereplő figyelhető meg. Az első szereplő maga a futó alkalmazás. (web) Bejelentkezve létre lehet hozni az új rendezvényt vagy már meglévőt meg lehet tekinteni. Ezzel van interakcióban a második szereplő, maga a felhasználó, aki létre is hozza a rendezvényeket valamint meghívja a többi felhasználó arra. A harmadik szereplő egy web-service, ami a tesztekhez szükséges adatokat szolgáltatja az alkalmazásnak egy adatbázisból.
