@@ -163,3 +163,15 @@ Amikor több ember egy nagy projekten dolgozik, általában kisebb részfeladato
 | K6 | QR kód beolvasása után megjelenik a jelenlévők listája. |
 | K7 | A jelenlévőkről statisztikát generál. |
 | K8 | A meghívó küldés lehetséges. |
+
+# 9. Használati esetek
+![Event Management negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Event%20%20Management%20negativ.jpg)
+
+<dr>
+  
+Ez leírja, hogy melyik felhasználó milyen funkciókat tud használni. Az oldalon kettő felhasználó van megkülönböztetve admin és nem admin. Az admin mindent tud amit a felhasználó sőtt még többet is. Az Admin(ok) feladata a rendszer problémamentes működése. Ez egyben jár azzal, hogy az egész rendszerhez van hozzáférésük. Az Admin(ok) hozzáférnek a felhasználók listájához, ahol mindent átváltoztathatnak egy felhasználó profilján. Például jogosultság, szerepkör, jelszó, és felhasználónév. 
+<dr>
+  
+<h3 align="center"> Elvárt/ideális statisztika az oldal elkészülése után:</>
+ 
+![kör diagram.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/kör%20diagram.png)
