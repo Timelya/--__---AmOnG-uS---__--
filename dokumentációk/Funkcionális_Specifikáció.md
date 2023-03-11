@@ -197,3 +197,15 @@ A forgatókönyvek bemutatják, hogyan alkalmazható ez a technológia az üzlet
 
 Az oldalunk kettő ilyen forgatókönnyel rendelkezik a felhasználóval és az adminisztrátorival.<br>
 Futási időben három szereplő figyelhető meg. Az első szereplő maga a futó alkalmazás. (web) Bejelentkezve létre lehet hozni az új rendezvényt vagy már meglévőt meg lehet tekinteni. Ezzel van interakcióban a második szereplő, maga a felhasználó, aki létre is hozza a rendezvényeket valamint meghívja a többi felhasználó arra. A harmadik szereplő egy web-service, ami a tesztekhez szükséges adatokat szolgáltatja az alkalmazásnak egy adatbázisból.
+
+  
+# 11. Fogalomszótár
+
+| Kifejezés | Meghatározás |
+|----------:|------------:|
+| WEB-SERVICE | különböző programnyelveken írt és különböző platformokon futó szoftveralkalmazások interneten keresztül történő adat cseréjére használt webszolgáltatások|
+| MULTIPLATFORM | több környezetben futtatható alkalmazás |
+| MAIN MENU | a főmenü, amely a weboldal indításakor megjelenik |
+| WEBOLDAL | jelen helyzetben egy felület mely rendezvények létrehozására alkalmas |
+| FRONT_END | a programoknak, weboldalaknak az a része, amelyik a felhasználóval közvetlenül kapcsolatban van. Feladata az adatok megjelenése, befogadása a felhasználó felől |
+| BACK_END | a programoknak, weboldalaknak a hátsó, a felhasználó elől rejtett, a tényleges számításokat végző része. Feladata a front‑end felől érkező adatok feldolgozása, és az eredményeknek a front‑end felé történő visszajuttatása |
