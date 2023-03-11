@@ -132,4 +132,14 @@ Napjainkban nagyon kevés a jól szervezett és könnyen kezelhető rendezvény 
 |![Erőforrás igény negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Erőforrás%20igény%20negativ.jpg)|
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|
 
+# 6. Nem funkcionális követelmények
+A nem funkcionális követelmények nem közvetlenül a rendszer által biztosított specifikus funkciókkal foglalkoznak, hanem inkább a rendszer egészére vonatkozó eredő rendszertulajdonságokra koncentrálnak. Példaként: megbízhatóság, válaszidő, tárfoglalás, rugalmasság, robosztusság, hordozhatóság, stb..<br>
+
+* A felhasználók nem juthatnak hozzá más felhasználók személyes adataihoz a nevükön kívül.
+* A felhasználói felület letisztult és színes világgal rendelkezik.
+* Biztonságos adattárolás van az oldalon.
+* A jelszó hash kódban tárolt.
+* Az oldal kellő gyorsasággal tölt be.
+* Rendszeresek a karbantartások ahol az előforduló hibákat kijavítjuk és tovább bővítjük a már meglévő funkciókat.
+
 
