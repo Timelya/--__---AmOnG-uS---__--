@@ -164,6 +164,8 @@ Amikor több ember egy nagy projekten dolgozik, általában kisebb részfeladato
 | K7 | A jelenlévőkről statisztikát generál. |
 | K8 | A meghívó küldés lehetséges. |
 
+# 8. Képernyő tervek
+
 # 9. Használati esetek
 ![Event Management negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Event%20%20Management%20negativ.jpg)
 
