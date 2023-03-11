@@ -142,4 +142,24 @@ A nem funkcionális követelmények nem közvetlenül a rendszer által biztosí
 * Az oldal kellő gyorsasággal tölt be.
 * Rendszeresek a karbantartások ahol az előforduló hibákat kijavítjuk és tovább bővítjük a már meglévő funkciókat.
 
+# 7. Követelménylista
+Amikor egy új szoftvert vagy funkciót szeretnénk kifejleszteni, először megpróbáljuk kitalálni, hogy hogyan képzeljük el a terméket. Ha már a tervezés fázisában összeállítjuk a listát, akkor abból több előnyünk is származik.<br>
+* _ELŐNY #1:_ FÓKUSZÁLTABB TERVEZÉS<br>
+A tervezési dokumentációk hajlamosak akkorára nőni, hogy a végén már nehéz mindent fejben tartani.
+* _ELŐNY #2:_ KÖNNYEBBEN ÁTTEKINTHETŐ ELVÁRÁSOK<br>
+Egy 100 oldalas követelmény-specifikáció nagy kihívást jelent a fejlesztőknek. Rengeteg információ van benne. Egy lista hatalmas segítséget jelent a két fél kommunikációjában.
+* _ELŐNY #3:_ JOBB NYOMONKÖVETHETŐSÉG<br>
+Hol járunk a projekttel? Mekkora része van már kész, és mennyi van még hátra?
+* _ELŐNY #4:_ JÓ KIINDULÁSI ALAP A KÖZÖS MUNKÁHOZ<br>
+Amikor több ember egy nagy projekten dolgozik, általában kisebb részfeladatokra osztják azt. A sok kicsi könnyebben kezelhető, mint az egy nagy. A követelmények felsorolásával ezt a felosztást már a projekt elején megvalósíthatjuk.<br><br>
 
+| Azonosító | Követelmény |
+|----------:|------------:|
+| K1 | A meghívott rendezvények gyorsan és áttekinthetően jelennek meg. |
+| K2 | A rendezvények neve jól látható. |
+| K3 | A rendezvények adatai és ideje jól olvasható. |
+| K4 | A rendezvény létrehozása gyorsan és könnyen lehetséges. |
+| K5 | A még nem elfogadott meghívók feltűnőek. |
+| K6 | QR kód beolvasása után megjelenik a jelenlévők listája. |
+| K7 | A jelenlévőkről statisztikát generál. |
+| K8 | A meghívó küldés lehetséges. |
