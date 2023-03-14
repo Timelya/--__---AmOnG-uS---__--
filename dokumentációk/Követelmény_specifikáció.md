@@ -119,3 +119,6 @@ A rendszer a regisztrált fiókokat két nagy csoportra ossza, admin és felhasz
 # 8. Forgatókönyvek
 ## 8.1. Regisztráció
 Belép a felhasználó az oldalra. A szeme elé tárul egy regisztrációs felület ahol létre tudja hozni a felhasználó fiókját néhány adat megadását követően. 
+
+## 8.2. Rendezvény létrehozás
+Amennyiben már regisztrálva van a felhasználó a rendszerben, azonnal létre tudja hozni a saját rendezvényét néhány adat megadásával. 
