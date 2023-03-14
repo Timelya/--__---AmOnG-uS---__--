@@ -126,3 +126,7 @@ Amennyiben már regisztrálva van a felhasználó a rendszerben, azonnal létre 
 
 ## 8.3. Profil szerkesztés
 Ha a felhasználó a felhasználó változtatni szeretne az adatain vagy további adatokat szeretne megadni akkor arra a profil szerkesztése menüben van lehetősége.
+
+## 8.4. Meghívó elfogadás
+A felhasználók meghívhatnak más felhasználókat rendezvényeikre mely meghívók külön jelennek meg. A meghívók menüben a rendezvények néhány adata és egy elfogadás vagy elutasítás gombot látnak. Amivel interakcióba lépve eldönthetik hogy elfogadják vagy elutasitjá a megivást.
+
