@@ -171,6 +171,19 @@ Amikor több ember egy nagy projekten dolgozik, általában kisebb részfeladato
 
 # 8. Képernyő tervek
 
+<h2 align="center"> Felhasználó </h2>
+
+| ![bejelentkezés.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/felhasználó/bejelentkezés.png) | ![regisztráció.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/felhasználó/regisztráció.png) | ![rendezvény létrehozás.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/felhasználó/rendezvény%20létrehozás.png) |
+|---:|----:|---:|
+| ![meghivó elfogad.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/felhasználó/meghivó%20elfogad.png) | ![rendezvény_lista.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/felhasználó/rendezvény_lista.png) | ![profil szerkesztés.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/felhasználó/profil%20szerkesztés.png) |
+
+<h2 align="center"> Admin </h2>
+
+| ![rendezvények.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/admin/rendezvények.png) | ![rendezvény_törlés.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/admin/rendezvény_törlés.png) | ![felhasználók.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/admin/felhasználók.png) |
+|---:|----:|---:|
+| ![meghivó_elfogad.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/admin/meghivó_elfogad.png) | ![profil_szerkesztés.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/admin/profil_szerkesztés.png) | ![rendezvény_lista.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/admin/rendezvény_lista.png) |
+
+
 <br>
 
 # 9. Használati esetek
