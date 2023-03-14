@@ -84,3 +84,8 @@ A projekt célja egy olyan rendszer, ami rendezvények létrehozására és szer
 3.1 Rendszer szereplői
 ![]()
 DIAGRAM CSATOLÁS!!!
+
+# 4. Jelenlegi üzleti folyamatok modellje
+Bővebben kifejtjük azt a folyamatot, amit a programunk szeretne kibővíteni. 
+
+A kezdeti szakaszban meg kell határozni a felhasználók igényeket és az elvárásokat. Ez magában foglalja a rendezvény típusát, a résztvevők számát, az esemény időpontját, a helyszínt és az egyéb szolgáltatásokat. A felhasználó tervezik meg az eseményt, és meghatározzák a részleteket.
