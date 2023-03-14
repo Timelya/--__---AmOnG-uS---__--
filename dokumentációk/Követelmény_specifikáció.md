@@ -116,3 +116,6 @@ A rendszer a regisztrált fiókokat két nagy csoportra ossza, admin és felhasz
 | FRONT_END | a programoknak, weboldalaknak az a része, amelyik a felhasználóval közvetlenül kapcsolatban van. Feladata az adatok megjelenése, befogadása a felhasználó felől |
 | BACK_END | a programoknak, weboldalaknak a hátsó, a felhasználó elől rejtett, a tényleges számításokat végző része. Feladata a front‑end felől érkező adatok feldolgozása, és az eredményeknek a front‑end felé történő visszajuttatása |
 
+# 8. Forgatókönyvek
+## 8.1. Regisztráció
+Belép a felhasználó az oldalra. A szeme elé tárul egy regisztrációs felület ahol létre tudja hozni a felhasználó fiókját néhány adat megadását követően. 
