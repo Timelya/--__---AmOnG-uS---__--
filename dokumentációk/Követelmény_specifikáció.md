@@ -122,3 +122,7 @@ Belép a felhasználó az oldalra. A szeme elé tárul egy regisztrációs felü
 
 ## 8.2. Rendezvény létrehozás
 Amennyiben már regisztrálva van a felhasználó a rendszerben, azonnal létre tudja hozni a saját rendezvényét néhány adat megadásával. 
+
+
+## 8.3. Profil szerkesztés
+Ha a felhasználó a felhasználó változtatni szeretne az adatain vagy további adatokat szeretne megadni akkor arra a profil szerkesztése menüben van lehetősége.
