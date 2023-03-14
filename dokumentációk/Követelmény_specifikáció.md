@@ -95,6 +95,7 @@ A kezdeti szakaszban meg kell határozni a felhasználók igényeket és az elv�
 Az előző pontban leírtuk a jelenlegi üzleti folyamatok modelljét most ezt azt fejtjük ki, hogy hogyan szeretnénk ezt kibővíteni.
 A felhasználó a főoldalon tud bejelentkezni (e-mail, jelszó), valamint a regisztrációt megkezdeni, mely egy új oldalon folytatódik (felhasználónév, jelszó, e-mail). Bejelentkezést követően lehetőséget, hozzáférést kap az oldal további funkcióihoz. Az ügyfélnek lehetősége van a főoldalon rendezvényt létrehozni és az igénye szerint variálni. Az ügyfél megadja a rendezvény típusát, a résztvevők számát, az esemény időpontját, a helyszínt és az egyéb szolgáltatásokat mint például a ruházati stílust.
 
+![Igényelt üzleti folyamatok.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/dokumentum%20képek/Igényelt%20üzleti%20folyamatok.jpg)
 # 6. Követelménylista
 ## 6.1. Felhasználói követelmények
 A program egy számítógépes vagy telefonos böngészőben futtatható. Előre kreált kategóriákból a felhasználó ki válassza a rendezvényének témáját. Az meghívottak számára láthatóaknak a rendezvény paraméterei (pl. téma, név, öltözködési követelmények stb.). A meghívók elfogadása a rendezvény kezdetéig lehetséges. A felhasználó tudja saját rendezvényeit utólagosan szerkeszteni és további embereket meghívni arra valamint akár törölni a rendezvényt vagy a meghivottakat.
