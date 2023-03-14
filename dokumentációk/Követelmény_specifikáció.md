@@ -130,3 +130,5 @@ Ha a felhasználó a felhasználó változtatni szeretne az adatain vagy tovább
 ## 8.4. Meghívó elfogadás
 A felhasználók meghívhatnak más felhasználókat rendezvényeikre mely meghívók külön jelennek meg. A meghívók menüben a rendezvények néhány adata és egy elfogadás vagy elutasítás gombot látnak. Amivel interakcióba lépve eldönthetik hogy elfogadják vagy elutasitjá a megivást.
 
+## 8.5. Rendezvények
+Az általunk elfogadott rendezvényeket megtudják tekinteni a rendezvények menüpontban. Részletes adatmegjelenés mellett.
