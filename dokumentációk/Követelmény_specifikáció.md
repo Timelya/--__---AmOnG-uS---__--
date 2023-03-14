@@ -82,8 +82,7 @@ A vágyálom rendszer azért felelős, hogy kifejtsük benne mit szeretnénk cé
 A projekt célja egy olyan rendszer, ami rendezvények létrehozására és szerkesztésére szolgál. A rendszer weben lesz elérhető. Regisztrációt követően a felhasználó létrehozhat rendezvényeket és meghivhat arra más felhasználókat. Továbbá a felhasználónak joga van természetesen a meghívó elfogadására vagy elutasítására.  Látványos, színes felülettel rendelkezik az oldal, hogy felkeltse a felhasználók figyelmét. A rendszer lehetőséget nyújt a felhasználók adatainak módosítására valamint van egy admin felülete is, ahol az admin fiókkal bejelentkezett felhasználó láthatját az üsszes rendezvényt és azt törölni tudják.
 
 3.1 Rendszer szereplői
-![]()
-DIAGRAM CSATOLÁS!!!
+![Rendszer szereplői diagram.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Rendszer%20szereplői%20diagram.jpg)
 
 # 4. Jelenlegi üzleti folyamatok modellje
 Bővebben kifejtjük azt a folyamatot, amit a programunk szeretne kibővíteni. 
