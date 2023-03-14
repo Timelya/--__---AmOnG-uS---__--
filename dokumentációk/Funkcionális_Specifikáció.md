@@ -85,8 +85,7 @@ A vágyálom rendszer azért felelős, hogy kifejtsük benne mit szeretnénk cé
 
 
 ## 2.1 	Kontextus diagram, adatfolyam diagram, alkalmazás képernyő folyamata, webhelytérkép, folyamat
-![Kontextus diagram negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Kontextus%20diagram%20negativ.jpg)
-
+![Kontextus diagram.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Kontextus%20diagram.jpg)
 
 <br>
 
@@ -110,12 +109,12 @@ Itt kezdje el a teljes rendszerre vonatkozó specifikációk leírását. Ismert
 
 # 4. Jelenlegi üzleti folyamatok modellje
 Napjainkban nagyon kevés a jól szervezett és könnyen kezelhető rendezvény létrehozó oldal. Ezért hoztuk létre oldalunk ahol a letisztult felület valamint a nem túlbonyolított rendszer adotta lehetőségeknek kösszönhetően lehetőség van rendezvények létrehozására és meghívók küldésére másik felhasználók számára. Gyorsan és könnyedén. <br>
-![BPMN negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/BPMN%20negativ.jpg)
+![BPMN.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/BPMN.jpg)
 
 <br>
 
 # 5. Igényelt üzleti folyamatok modellje
-|![Fázisok és unkafolyamatok negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Fázisok%20és%20unkafolyamatok%20negativ.jpg)|
+|![Fázisok és unkafolyamatok.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Fázisok%20és%20munkafolyamatok.jpg)|
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 
@@ -124,7 +123,7 @@ Napjainkban nagyon kevés a jól szervezett és könnyen kezelhető rendezvény 
 <p align="center"> ▂▃▅▇█▓▒░۩۞۩                    ۩۞۩░▒▓█▇▅▃▂</p>
 
 
-|![Erőforrás igény negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Erőforrás%20igény%20negativ.jpg)|
+|![Erőforrás igény.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Erőforrás%20igény.png)|
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 <br>
