@@ -99,7 +99,8 @@ A felhasználó a főoldalon tud bejelentkezni (e-mail, jelszó), valamint a reg
 ## 6.1. Felhasználói követelmények
 A program egy számítógépes vagy telefonos böngészőben futtatható. Előre kreált kategóriákból a felhasználó ki válassza a rendezvényének témáját. Az meghívottak számára láthatóaknak a rendezvény paraméterei (pl. téma, név, öltözködési követelmények stb.). A meghívók elfogadása a rendezvény kezdetéig lehetséges. A felhasználó tudja saját rendezvényeit utólagosan szerkeszteni és további embereket meghívni arra valamint akár törölni a rendezvényt vagy a meghivottakat.
 
-
+## 6.2. Use Case diagram
+DAIAGRAMM CSATOLÁS
 
 
 
