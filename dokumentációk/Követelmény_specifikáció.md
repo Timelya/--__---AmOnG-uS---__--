@@ -69,3 +69,10 @@ _Április 4_-re a programunk elkezdése és némely funkció működése a terv.
 _Április 25_-én a programunk legtöbb funkciója működik és használatra kész.<br>
 _Május 23_ az utolsó leadási határidőre a program hiba mentes és a kinézet terv szerint jelenik meg.<br>
 
+## 2.3		Kapcsolódó dokumentumok
+| Név                         | Leírás                                                                                                     |
+|-----------------------------|------------------------------------------------------------------------------------------------------------|
+|  Funkcionális specifikáció, | egy olyan dokumentum, ami meghatározza azokat a funkciókat, amiket a rendszernek meg kell tudni valósítani |
+| Követelmény specifikáció,   | tartalmazza az összes követelményt, amelyet a termék tervezésére és ellenőrzésére kell támasztani valamint egyéb kapcsolódó információkat is, amelyek a termék tervezéséhez, ellenőrzéséhez és karbantartásához szükségesek   |
+| Rendszerterv,               | a fejlesztési folyamatnak az a szakasza, melyben a fejlesztés tárgyának felső szintű definíciója és terve kerül meghatározásra|
+| Teszt jegyzőkönyv,          | tesztesetek leírását tartalmazza |
