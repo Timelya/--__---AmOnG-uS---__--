@@ -41,3 +41,31 @@ Az elvárás egy rendezvény kezelő oldal ahol lehetőség van rendezvény lét
 A követelményspecifikáció dokumentáció, egy olyan folyamat, amely az összes rendszer- és felhasználói követelményt egy dokumentum formájában rögzíti. Ezeknek a követelményeknek világosnak, teljesnek, átfogónak és következetesnek kell lenniük. 
 A rögzítési tevékenység során minden igényt összegyűjtünk különböző forrásokból. Az elemzési és tárgyalási tevékenységek során elemezzük és megértjük ezeket a követelményeket. Most el kell készítenünk egy hivatalos dokumentumot, amely elmagyarázza ezeket a követelményeket. Ez a követelmény specifikációja. Pontosabban, ez az összes felhasználói és rendszerigény és korlát egyértelmű és pontos dokumentálása.
 
+## 2.2		Projekt hatóköre
+**A projekt célja:** A projekt célja egy rendezvény kezelő oldal létrehozása melyben
+lehetősége van az oldalt használó személyeknek saját eseményt létrehozni és arra
+meghívókat küldeni a kívánt személyeknek. Valamint amennyiben őket hívják meg egy
+eseményre a kapott meghívót elfogadni.<br>
+
+**A projekt végeredménye:** A projekt által elérni kívánt termék funkciói az esemény
+létrehozása, meghívó küldése és elfogadása valamint QR kód segítségével jelenlét
+vezetése.<br>
+
+Projektek termékei:
+* Funkcionális specifikáció
+* Követelmény specifikáció
+* Rendszerterv
+* tesztjegyzőkönyvek,
+* programkód,
+* adatbázis,<br>
+
+**A projekt korlátai:** Projektünk költségvetése nagyon alacsony megközelíti a nullát ugyanis
+minden szükséges eszköz a rendelkezésünkre áll. Viszont az időkorlátokat négy szakaszra
+bontottuk.<br>
+
+_Március 21_-ra tervezzük a dokumentáció teljes elkészitést, pontositva a Funkcionális
+specifikáció, Követelmény specifikáció és Rendszerterv megléte az elvárt.<br>
+_Április 4_-re a programunk elkezdése és némely funkció működése a terv.<br>
+_Április 25_-én a programunk legtöbb funkciója működik és használatra kész.<br>
+_Május 23_ az utolsó leadási határidőre a program hiba mentes és a kinézet terv szerint jelenik meg.<br>
+
