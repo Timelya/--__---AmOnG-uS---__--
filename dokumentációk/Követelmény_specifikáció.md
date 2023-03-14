@@ -37,3 +37,7 @@ A feladat, hogy egy olyan oldalt kell tervezni, amely kiszolgálja egy átlagos/
 # 2. A jelenlegi helyzet leírása
 Az elvárás egy rendezvény kezelő oldal ahol lehetőség van rendezvény létrehozására, meghívók küldése, QR kód beolvasásával jelenlét vezetése és meghívók jóváhagyása ezzel együtt ebből statisztika létrehozása.
 
+## 2.1		A dokumentum célja
+A követelményspecifikáció dokumentáció, egy olyan folyamat, amely az összes rendszer- és felhasználói követelményt egy dokumentum formájában rögzíti. Ezeknek a követelményeknek világosnak, teljesnek, átfogónak és következetesnek kell lenniük. 
+A rögzítési tevékenység során minden igényt összegyűjtünk különböző forrásokból. Az elemzési és tárgyalási tevékenységek során elemezzük és megértjük ezeket a követelményeket. Most el kell készítenünk egy hivatalos dokumentumot, amely elmagyarázza ezeket a követelményeket. Ez a követelmény specifikációja. Pontosabban, ez az összes felhasználói és rendszerigény és korlát egyértelmű és pontos dokumentálása.
+
