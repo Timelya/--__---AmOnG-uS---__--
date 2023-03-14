@@ -81,7 +81,7 @@ _Május 23_ az utolsó leadási határidőre a program hiba mentes és a kinéze
 A vágyálom rendszer azért felelős, hogy kifejtsük benne mit szeretnénk célul a programunkban a 100%-ban ideális esetben.
 A projekt célja egy olyan rendszer, ami rendezvények létrehozására és szerkesztésére szolgál. A rendszer weben lesz elérhető. Regisztrációt követően a felhasználó létrehozhat rendezvényeket és meghivhat arra más felhasználókat. Továbbá a felhasználónak joga van természetesen a meghívó elfogadására vagy elutasítására.  Látványos, színes felülettel rendelkezik az oldal, hogy felkeltse a felhasználók figyelmét. A rendszer lehetőséget nyújt a felhasználók adatainak módosítására valamint van egy admin felülete is, ahol az admin fiókkal bejelentkezett felhasználó láthatját az üsszes rendezvényt és azt törölni tudják.
 
-3.1 Rendszer szereplői
+## 3.1 Rendszer szereplői
 ![Rendszer szereplői diagram.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Rendszer%20szereplői%20diagram.jpg)
 
 # 4. Jelenlegi üzleti folyamatok modellje
@@ -95,6 +95,7 @@ Az előző pontban leírtuk a jelenlegi üzleti folyamatok modelljét most ezt a
 A felhasználó a főoldalon tud bejelentkezni (e-mail, jelszó), valamint a regisztrációt megkezdeni, mely egy új oldalon folytatódik (felhasználónév, jelszó, e-mail). Bejelentkezést követően lehetőséget, hozzáférést kap az oldal további funkcióihoz. Az ügyfélnek lehetősége van a főoldalon rendezvényt létrehozni és az igénye szerint variálni. Az ügyfél megadja a rendezvény típusát, a résztvevők számát, az esemény időpontját, a helyszínt és az egyéb szolgáltatásokat mint például a ruházati stílust.
 
 ![Igényelt üzleti folyamatok.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/dokumentum%20képek/Igényelt%20üzleti%20folyamatok.jpg)
+<br>
 # 6. Követelménylista
 ## 6.1. Felhasználói követelmények
 A program egy számítógépes vagy telefonos böngészőben futtatható. Előre kreált kategóriákból a felhasználó ki válassza a rendezvényének témáját. Az meghívottak számára láthatóaknak a rendezvény paraméterei (pl. téma, név, öltözködési követelmények stb.). A meghívók elfogadása a rendezvény kezdetéig lehetséges. A felhasználó tudja saját rendezvényeit utólagosan szerkeszteni és további embereket meghívni arra valamint akár törölni a rendezvényt vagy a meghivottakat.
@@ -133,5 +134,5 @@ A felhasználók meghívhatnak más felhasználókat rendezvényeikre mely megh�
 ## 8.5. Rendezvények
 Az általunk elfogadott rendezvényeket megtudják tekinteni a rendezvények menüpontban. Részletes adatmegjelenés mellett.
 
-# 8.6. Rendszer karbantartás
+## 8.6. Rendszer karbantartás
 A rendszerkarbantartást az adminisztrátor végzi. A karbantartási feladat részei: adatbázis-kezelés, adatok felvitele, adatok törlése, a rendszer fejlesztése, hardverek ellenőrzése.
