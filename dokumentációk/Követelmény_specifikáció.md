@@ -27,6 +27,11 @@ ________________________________________________________________________________
 <br><br><br>
 
 
+A követelmény specifikáció dokumentumban a rendszer szolgáltatások és működési feltételek meghatározása a megrendel számára a cél. A dokumentum során összekapcsolódik a rendszer és szoftver tervezés folyamata.
+# 1. Áttekintés
+Ebben a fejezetben röviden ismertetem a projektünk egészét. Milyen technológiákat szeretnénk alkalmazni, hogyan fog működni az alkalmazásunk és hasonlók.
+
+A feladat, hogy egy olyan oldalt kell tervezni, amely kiszolgálja egy átlagos/kezdő rendezvény létrehozó ember igényeit, ingyen és egységesen. Tehát a program két részre bomlik. Az egyik rész az, amit a felhasználó használ és lát. A rendszer ezen része, legyen annyira egyszerűen kezelhető, hogy használatához akár ne is legyen szükség külső segítségre. A tervbe van több különböző kategória létrehozása rendezvények szerint. A felhasználók tudják megtekinteni a számukra elérhető rendezvények listáját. A rendszer másik része pedig az admin részére érhető el. Az admin látja az összes regisztrált felhasználó adatát. Valamint kezelheti a felhasználók adatait. Változtathat rajta pl adhat admin jogot vagy törölheti is őket. A felhasználó által létrehozott rendezvényeket is tudja szerkeszteni és törölni.
 
 
 
