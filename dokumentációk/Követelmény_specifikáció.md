@@ -105,5 +105,14 @@ DAIAGRAMM CSATOLÁS
 ## 6.3 Rendszerkövetelmények
 A rendszer a regisztrált fiókokat két nagy csoportra ossza, admin és felhasználó. Továbbá a felhasználót meghívott és szervező csoportra szedi szét. Az admin a rendszer karbantartásért felelős, minden olyan joggal rendelkezik amivel a felhasználó is sótt még többel is hiszen ő minden felhasználó felett rendelkezik. A felhasználó egyik alcsoportja a szervező aki létrehoz egy rendezvényt megadott paraméterek alapján majd arra meghívja a többi felhasználót akik a meghívottak szerepkörét töltik be. A meghívott eldöntheti, hogy elfogadja e a meghívást vagy elutasítja azt.
 
+# 7. Fogalomszótár
 
+| Kifejezés | Meghatározás |
+|----------:|------------:|
+| WEB-SERVICE | különböző programnyelveken írt és különböző platformokon futó szoftveralkalmazások interneten keresztül történő adat cseréjére használt webszolgáltatások|
+| MULTIPLATFORM | több környezetben futtatható alkalmazás |
+| MAIN MENU | a főmenü, amely a weboldal indításakor megjelenik |
+| WEBOLDAL | jelen helyzetben egy felület mely rendezvények létrehozására alkalmas |
+| FRONT_END | a programoknak, weboldalaknak az a része, amelyik a felhasználóval közvetlenül kapcsolatban van. Feladata az adatok megjelenése, befogadása a felhasználó felől |
+| BACK_END | a programoknak, weboldalaknak a hátsó, a felhasználó elől rejtett, a tényleges számításokat végző része. Feladata a front‑end felől érkező adatok feldolgozása, és az eredményeknek a front‑end felé történő visszajuttatása |
 
