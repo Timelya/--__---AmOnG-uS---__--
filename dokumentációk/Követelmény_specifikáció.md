@@ -132,3 +132,6 @@ A felhasználók meghívhatnak más felhasználókat rendezvényeikre mely megh�
 
 ## 8.5. Rendezvények
 Az általunk elfogadott rendezvényeket megtudják tekinteni a rendezvények menüpontban. Részletes adatmegjelenés mellett.
+
+# 8.6. Rendszer karbantartás
+A rendszerkarbantartást az adminisztrátor végzi. A karbantartási feladat részei: adatbázis-kezelés, adatok felvitele, adatok törlése, a rendszer fejlesztése, hardverek ellenőrzése.
