@@ -102,6 +102,8 @@ A program egy számítógépes vagy telefonos böngészőben futtatható. Előre
 ## 6.2. Use Case diagram
 DAIAGRAMM CSATOLÁS
 
+## 6.3 Rendszerkövetelmények
+A rendszer a regisztrált fiókokat két nagy csoportra ossza, admin és felhasználó. Továbbá a felhasználót meghívott és szervező csoportra szedi szét. Az admin a rendszer karbantartásért felelős, minden olyan joggal rendelkezik amivel a felhasználó is sótt még többel is hiszen ő minden felhasználó felett rendelkezik. A felhasználó egyik alcsoportja a szervező aki létrehoz egy rendezvényt megadott paraméterek alapján majd arra meghívja a többi felhasználót akik a meghívottak szerepkörét töltik be. A meghívott eldöntheti, hogy elfogadja e a meghívást vagy elutasítja azt.
 
 
 
