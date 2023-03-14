@@ -87,10 +87,6 @@ A vágyálom rendszer azért felelős, hogy kifejtsük benne mit szeretnénk cé
 ## 2.1 	Kontextus diagram, adatfolyam diagram, alkalmazás képernyő folyamata, webhelytérkép, folyamat
 ![Kontextus diagram negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Kontextus%20diagram%20negativ.jpg)
 
-<br>
-
-## 2.2 Rendszer szereplői
-![Rendszer szereplői diagram negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Rendszer%20szereplői%20diagram%20negativ.jpg)
 
 <br>
 
