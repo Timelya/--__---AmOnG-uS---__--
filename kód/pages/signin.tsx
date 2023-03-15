@@ -38,7 +38,7 @@ function SignIn() {
         },
       })
       if (data.signIn.user) {
-        await router.push('/')
+        await router.push('/siker')
       }
     } catch (error) {
       setErrorMsg(getErrorMessage(error))
