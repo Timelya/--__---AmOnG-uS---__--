@@ -1,15 +1,6 @@
-<br>
-<h3 align="center">
-  ,.-~*´¨¯¨`*·~-.¸-(...𝔼𝕤𝕫𝕥𝕖𝕣𝕙á𝕫𝕪 𝕂á𝕣𝕠𝕝𝕪 𝕂𝕒𝕥𝕠𝕝𝕚𝕜𝕦𝕤 𝔼𝕘𝕪𝕖𝕥𝕖𝕞...)-,.-~*´¨¯¨`*·~-.¸
-
-</h3>
-
-<h4 align="center">
-ඞ csapat
-</h4><br>
-
+<br><br>
 <h1 align="center">
-𝐅𝐮𝐧𝐤𝐜𝐢𝐨𝐧á𝐥𝐢𝐬 𝐒𝐩𝐞𝐜𝐢𝐟𝐢𝐤á𝐜𝐢ó 𝐝𝐨𝐤𝐮𝐦𝐞𝐧𝐭𝐮𝐦
+ඞ 𝐅𝐮𝐧𝐤𝐜𝐢𝐨𝐧á𝐥𝐢𝐬 𝐒𝐩𝐞𝐜𝐢𝐟𝐢𝐤á𝐜𝐢ó 𝐝𝐨𝐤𝐮𝐦𝐞𝐧𝐭𝐮𝐦 ඞ
 </h1><br>
 <h3 align="center">
 -- Rendezvény és jegykezelő alkalmazás --
@@ -22,7 +13,7 @@ Esemény létrehozása, meghívók küldése, QR kód beolvasásával jelenlét 
 _________________________________________________________________________________________________________________________________________________
 </p>
 <p align="center">𝙳𝙾𝙲𝚄𝙼𝙴𝙽𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽<br>
-2023.03.07</p>
+2023.03.11.</p>
 <br><br><br><br>
 <h1 align="center">~Szerkesztők~</h1>
 
@@ -94,13 +85,12 @@ A vágyálom rendszer azért felelős, hogy kifejtsük benne mit szeretnénk cé
 
 
 ## 2.1 	Kontextus diagram, adatfolyam diagram, alkalmazás képernyő folyamata, webhelytérkép, folyamat
-![Kontextus diagram negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Kontextus%20diagram%20negativ.jpg)
+![Kontextus diagram.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Kontextus%20diagram.jpg)
 
-## 2.2 Rendszer szereplői
-![Rendszer szereplői diagram negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Rendszer%20szereplői%20diagram%20negativ.jpg)
+<br>
 
 # 3. Funkció - követelmény megfeleltetése
-Itt kezdje el a teljes rendszerre vonatkozó specifikációk leírását. Ismertetett összes funkcióról, és linkelheti őket az alábbi tételekhez.
+Itt kezdje el a teljes rendszerre vonatkozó specifikációk leírását. Ismertetett összes funkcióról, és linkelheti őket az alábbi tételekhez.<br>
 
 | Modul       | ID  | Név                    | Kifejtés                                                                                                                                               |
 |-------------|-----|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -114,13 +104,17 @@ Itt kezdje el a teljes rendszerre vonatkozó specifikációk leírását. Ismert
 | Felület     | K8  | Rendezvény törlése     | A felhasználó képes saját rendezvényeinek törlésére.|
 | Felület     | K9  | Meghívó küldése        | A felhasználó megtud hívni más felhasználókat a rendezvényeire.|
 | Felület     | K10 | Meghívó elfogadása     | A felhasználó képes elfogadni a más felhasználók által küldött meghívókat.|
-  
+
+<br>
+
 # 4. Jelenlegi üzleti folyamatok modellje
 Napjainkban nagyon kevés a jól szervezett és könnyen kezelhető rendezvény létrehozó oldal. Ezért hoztuk létre oldalunk ahol a letisztult felület valamint a nem túlbonyolított rendszer adotta lehetőségeknek kösszönhetően lehetőség van rendezvények létrehozására és meghívók küldésére másik felhasználók számára. Gyorsan és könnyedén. <br>
-![BPMN negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/BPMN%20negativ.jpg)
-  
+![BPMN.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/BPMN.jpg)
+
+<br>
+
 # 5. Igényelt üzleti folyamatok modellje
-|![Fázisok és unkafolyamatok negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Fázisok%20és%20unkafolyamatok%20negativ.jpg)|
+|![Fázisok és unkafolyamatok.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Fázisok%20és%20munkafolyamatok.jpg)|
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 
@@ -129,8 +123,10 @@ Napjainkban nagyon kevés a jól szervezett és könnyen kezelhető rendezvény 
 <p align="center"> ▂▃▅▇█▓▒░۩۞۩                    ۩۞۩░▒▓█▇▅▃▂</p>
 
 
-|![Erőforrás igény negativ.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Erőforrás%20igény%20negativ.jpg)|
+|![Erőforrás igény.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Erőforrás%20igény.png)|
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+<br>
 
 # 6. Nem funkcionális követelmények
 A nem funkcionális követelmények nem közvetlenül a rendszer által biztosított specifikus funkciókkal foglalkoznak, hanem inkább a rendszer egészére vonatkozó eredő rendszertulajdonságokra koncentrálnak. Példaként: megbízhatóság, válaszidő, tárfoglalás, rugalmasság, robosztusság, hordozhatóság, stb..<br>
@@ -141,6 +137,8 @@ A nem funkcionális követelmények nem közvetlenül a rendszer által biztosí
 * A jelszó hash kódban tárolt.
 * Az oldal kellő gyorsasággal tölt be.
 * Rendszeresek a karbantartások ahol az előforduló hibákat kijavítjuk és tovább bővítjük a már meglévő funkciókat.
+
+<br>
 
 # 7. Követelménylista
 Amikor egy új szoftvert vagy funkciót szeretnénk kifejleszteni, először megpróbáljuk kitalálni, hogy hogyan képzeljük el a terméket. Ha már a tervezés fázisában összeállítjuk a listát, akkor abból több előnyünk is származik.<br>
@@ -163,3 +161,69 @@ Amikor több ember egy nagy projekten dolgozik, általában kisebb részfeladato
 | K6 | QR kód beolvasása után megjelenik a jelenlévők listája. |
 | K7 | A jelenlévőkről statisztikát generál. |
 | K8 | A meghívó küldés lehetséges. |
+
+<br>
+
+# 8. Képernyő tervek
+
+<h2 align="center"> Felhasználó </h2>
+
+| ![bejelentkezés.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/felhasználó/bejelentkezés.png) | ![regisztráció.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/felhasználó/regisztráció.png) | ![rendezvény létrehozás.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/felhasználó/rendezvény%20létrehozás.png) |
+|---:|----:|---:|
+| ![meghivó elfogad.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/felhasználó/meghivó%20elfogad.png) | ![rendezvény_lista.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/felhasználó/rendezvény_lista.png) | ![profil szerkesztés.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/felhasználó/profil%20szerkesztés.png) |
+
+<h2 align="center"> Admin </h2>
+
+| ![rendezvények.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/admin/rendezvények.png) | ![rendezvény_törlés.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/admin/rendezvény_törlés.png) | ![felhasználók.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/admin/felhasználók.png) |
+|---:|----:|---:|
+| ![meghivó_elfogad.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/admin/meghivó_elfogad.png) | ![profil_szerkesztés.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/admin/profil_szerkesztés.png) | ![rendezvény_lista.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/tervek/admin/rendezvény_lista.png) |
+
+
+<br>
+
+# 9. Használati esetek
+
+| ▬▬ι══════════ﺤ     | ![Event Management.jpg](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/Event%20%20Management.jpg) | -══════════ι▬▬ |
+| --- | --- | --- |
+<dr>
+  
+Ez leírja, hogy melyik felhasználó milyen funkciókat tud használni. Az oldalon kettő felhasználó van megkülönböztetve admin és nem admin. Az admin mindent tud amit a felhasználó sőtt még többet is. Az Admin(ok) feladata a rendszer problémamentes működése. Ez egyben jár azzal, hogy az egész rendszerhez van hozzáférésük. Az Admin(ok) hozzáférnek a felhasználók listájához, ahol mindent átváltoztathatnak egy felhasználó profilján. Például jogosultság, szerepkör, jelszó, és felhasználónév. 
+<dr>
+  
+<h1 align="center"> Elvárt/ideális statisztika az oldal elkészülése után:</>
+ 
+![kör diagram.png](https://github.com/Timelya/--__---AmOnG-uS---__--/blob/main/képek/kör%20diagram.png)
+<br>
+
+# 10. Forgatókönyvek
+A forgatókönyvek bemutatják, hogyan alkalmazható ez a technológia az üzleti célok megvalósítása és problémák megoldása érdekében.
+  * Adminisztrátori forgatókönyvek:<br>
+    * olyan speciális feladatokat mutatnak be, amelyeket adminisztratív szerepkörrel rendelkező felhasználók végeznek el<br>
+* Szolgáltatástulajdonosi forgatókönyvek<br>
+    * olyan speciális feladatokat mutatnak be, amelyeket szolgáltatástulajdonosok végeznek el<br>
+* Nem adminisztrációs felhasználói forgatókönyvek<br>
+    * egy nem adminisztratív felhasználó által elvégezhető egyszerű feladatok egy részét ismertetik<br>
+* Vezetői forgatókönyvek<br>
+    * egy vezető által elvégezhető egyszerű adminisztrációs feladatok egy részét ismertetik<br>
+* Identity Manager Service Center-forgatókönyvek<br>
+    * egy vezető vagy egy képviselő által elvégezhető feladatok egy részét ismertetik<br>
+* Segélyszolgálat-forgatókönyvek<br>
+    * egy segélyszolgálat-munkatárs által elvégezhető adminisztrációs feladatok egy részét ismertetik<br>
+* Auditori forgatókönyvek<br>
+    * egy auditor által adminisztrációs feladatok egy részét ismertetik<br><br>
+
+Az oldalunk kettő ilyen forgatókönnyel rendelkezik a felhasználóval és az adminisztrátorival.<br>
+Futási időben három szereplő figyelhető meg. Az első szereplő maga a futó alkalmazás. (web) Bejelentkezve létre lehet hozni az új rendezvényt vagy már meglévőt meg lehet tekinteni. Ezzel van interakcióban a második szereplő, maga a felhasználó, aki létre is hozza a rendezvényeket valamint meghívja a többi felhasználó arra. A harmadik szereplő egy web-service, ami a tesztekhez szükséges adatokat szolgáltatja az alkalmazásnak egy adatbázisból.
+
+<br>
+
+# 11. Fogalomszótár
+
+| Kifejezés | Meghatározás |
+|----------:|------------:|
+| WEB-SERVICE | különböző programnyelveken írt és különböző platformokon futó szoftveralkalmazások interneten keresztül történő adat cseréjére használt webszolgáltatások|
+| MULTIPLATFORM | több környezetben futtatható alkalmazás |
+| MAIN MENU | a főmenü, amely a weboldal indításakor megjelenik |
+| WEBOLDAL | jelen helyzetben egy felület mely rendezvények létrehozására alkalmas |
+| FRONT_END | a programoknak, weboldalaknak az a része, amelyik a felhasználóval közvetlenül kapcsolatban van. Feladata az adatok megjelenése, befogadása a felhasználó felől |
+| BACK_END | a programoknak, weboldalaknak a hátsó, a felhasználó elől rejtett, a tényleges számításokat végző része. Feladata a front‑end felől érkező adatok feldolgozása, és az eredményeknek a front‑end felé történő visszajuttatása |
