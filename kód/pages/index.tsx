@@ -74,7 +74,7 @@ const Home: NextPage<User> = ({ users }) => {
     }
   }
 
-  async function updateUser(name, password, id) {
+  async function updateUser(name: string, password: string, id: string) {
     //console.log(name, password, id)
     setForm({name, password, id})
     setNewUser(false)
