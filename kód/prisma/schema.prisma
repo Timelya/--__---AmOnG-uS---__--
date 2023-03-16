@@ -1,3 +1,6 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -7,12 +10,9 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
-model user {
-  ID    Int @id @default(autoincrement())
-  Name  String
-  Hash  Int
-  Email Int
-
-  @@ignore
+model User {
+  id Int @id @default(autoincrement())
+  name String
+  password String
+  created DateTime @default(now())
 }
