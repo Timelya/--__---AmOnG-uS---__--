@@ -5,6 +5,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  
   const userId = req.query.id
   const {name, password, id} = req.body
     // DELETE
