@@ -143,7 +143,7 @@ const Home: NextPage<User> = ({ users }) => {
               <div className="flex jusify-between">
                 <div className="flex-1">
                   <h3 className="font-bold">{user.name}</h3>
-                  <p className="text-sm">{user.email}</p>
+                  <p className="text-sm">{user.password}</p>
                 </div>
                 <button onClick={() => updateUser(user.name,user.password,user.id)} className="bg-blue-500 px-3 text-white rounded">Edit</button>
                 <button onClick={() => deleteUser(user.id)} className="bg-red-500 px-3 text-white rounded">X</button>
