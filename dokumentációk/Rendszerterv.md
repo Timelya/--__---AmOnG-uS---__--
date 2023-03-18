@@ -256,3 +256,10 @@ Ezt a tesztet nem a fejlesztők végzik. Tesztelendő böngészők: Opera, Firef
 
 Például.: #01 Kép A kép látható és változik, A kép változik Nem találtam problémát.
 Továbbit részletes tesztek: Teszt.md
+
+# 12. Telepítési terv 
+
+Leírja hogyan kell telepíteni a programot. 
+
+**Webes alkalmazás** 
+- A szoftver webes felületéhez csak egy ajánlott böngésző telepítése szükséges (Google Chrome, Firefox, Opera, Safari), külön szoftver nem kell hozzá. A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek.
