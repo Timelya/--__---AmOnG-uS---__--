@@ -2,9 +2,10 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Component, useState } from "react";
 import { prisma } from "../lib/prisma";
-import { GetServerSideProps } from "next";
 import { useRouter } from "next/router";
 import { sha256 } from "js-sha256";
+import { getServerSideProps } from "./Components/getServerSideProps";
+
 
 interface FormData {
   name: string;
@@ -40,7 +41,7 @@ const Login: NextPage<User> = ({ users }) => {
         alert("Helytelen felahsználónév, vagy jelszó")
         return
       }
-      alert("sikeres bejelentkezés")
+      router.push('/')
       
     } catch (error) {
       console.log(error);
@@ -96,21 +97,6 @@ const Login: NextPage<User> = ({ users }) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  // READ all users from DB
-  const users = await prisma?.user.findMany({
-    select: {
-      id: true,
-      name: true,
-      password: true,
-    },
-  });
 
-  return {
-    props: {
-      users,
-    },
-  };
-};
 
 export default Login;

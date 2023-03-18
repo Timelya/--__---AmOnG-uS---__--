@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Component, useState } from "react";
 import { prisma } from "../lib/prisma";
-import { GetServerSideProps } from "next";
 import { useRouter } from "next/router";
 import { sha256 } from "js-sha256";
+import { getUsers } from "./Components/getServerSideProps";
 
 interface FormData {
   name: string;
@@ -114,22 +114,5 @@ const Register: NextPage<User> = ({ users }) => {
     </>
   );
 };
-
-export const getServerSideProps: GetServerSideProps = async () => {
-  // READ all users from DB
-  const users = await prisma?.user.findMany({
-    select: {
-      id: true,
-      name: true,
-      password: true
-    }
-  })
-
-  return {
-    props: {
-      users
-    }
-  }
-}
 
 export default Register;
