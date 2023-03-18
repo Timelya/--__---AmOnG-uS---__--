@@ -210,3 +210,9 @@ Egy böngésző, amely az elektronikai eszközön fut abba lehetséges az oldal 
 - Trello
 - Github 
 - Visual Studio Code (PHP, HTML, tailwind CSS, Javascript, Nextjs, react )
+
+# 7. Architekturális terv 
+
+Backend: A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. A kliens oldali programokat egy php alapú REST api szolgálja ki, ez csatlakozik az adatbázis szerverhez. A kliensekkel JSON objektumokkal kommunikál. 
+
+Web Kliens: A web alkalmazás react keretrendszer használatával készül el. A rest api-hoz a user belépését követően egyedi api-key segítségével lehet hozzáférni, ez biztosítja, hogy illetéktelen felhasználók ne módosíthassák az adatokat.
