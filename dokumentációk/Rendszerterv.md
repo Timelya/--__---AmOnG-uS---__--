@@ -34,3 +34,6 @@ A rendszer célja, hogy a felhasználók könnyedén hozzanak létre rendezvény
 
 A rendszer az adatokat egy Web Service segítségével kapja az adatbázisból. Mivel az alkalmazást csak webes felületen, szeretnénk elérhetővé tenni, nem célunk hogy más, például IOS operációs rendszerrel rendelkező eszközön fusson. 
 
+## 1.2. Dokumentumnak nem célja 
+
+Az informatikai rendszertervnek nem célja, hogy az üzleti funkciókat megvalósító algoritmusokat ismertesse. Az informatikai rendszerterv a műszaki kereteket definiálja, de nem tér ki minden funkcionális elem részletes műszaki megvalósítására. 
