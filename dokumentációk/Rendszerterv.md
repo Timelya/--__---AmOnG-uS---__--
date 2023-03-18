@@ -285,8 +285,7 @@ Alkalmanként ellenőrzési terv: 
 -   Korszerűsített frontend változtatások     
 -   Felhasználók által adott hibák és kiskapuk kezelése/javítása     
 
-Karbantartás 
-
+**Karbantartás**
 -   Corrective Maintenance: A felhasználók által felfedezett és "user reportban" elküldött hibák kijavítása.     
 -   Adaptive Maintenance: A program naprakészen tartása és finomhangolása.     
 -   Perfective Maintenance: A szoftver hosszútávú használata érdekében végzett módosítások, új funkciók, a szoftver teljesítményének és működési megbízhatóságának javítása. 
