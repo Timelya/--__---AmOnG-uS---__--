@@ -184,3 +184,9 @@ A rendszer internet hiányában is működtethető importálás megtörténte fe
 	-   Rendezvény létrehozása. 
 	-   Meghívó elfogadása/elutasítása. 
 	-   Saját adatainak módosítására.
+
+## 5.2 Menühierarchiák 
+
+A szoftver egy nagyon egyszerű menürendszert tartalmaz. Bejelentkezés után a felhasználót az oldal egyből a főoldal fogadja ahol létre is hozhatja az első rendezvényét vagy innen tud átlépni más menü pontokba is. Ilyen az adatait tartalmazó menüpont is ahol testre szabhatja felhasználói képét valamint nevet és jelszót változtatott és a meghívó elfogadási menü is.
+
+![Megnevezetlen diagram](https://user-images.githubusercontent.com/113434354/226110672-f691b8e1-e0d8-455c-a13a-4e7f50fe2156.jpg)
