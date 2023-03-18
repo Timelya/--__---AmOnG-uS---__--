@@ -51,3 +51,19 @@ Az értelmezést segítő, az elkészítéshez felhasznált dokumentumok felsoro
 - Scrum masters: Palotai Marcell Martin
 - Product owner: Palotai Marcell Martin 
 - Üzleti szereplő: Palotai Marcell Martin
+
+## 2.2 Projektmunkások és felelőségek:
+Frontend: 
+- Elsődleges: Petrovics Tímea     
+- Másodlagos: Pataki Tamás-
+- Harmadlagos: Rokob Attila Adrián 
+
+Backend: 
+- Elsődleges: Rokob Attila Adrián   
+- Másodlagos: Pataki Tamás   
+- Harmadlagos: Petrovics Tímea 
+
+Tesztelés: 
+- Elsődleges: Pataki Tamás   
+- Másodlagos: Petrovics Tímea
+- Harmadlagos: Rokob Attila Adrián
