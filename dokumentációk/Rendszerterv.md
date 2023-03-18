@@ -82,15 +82,27 @@ Tesztelés: 
 ## 2.4 Mérföldkövek
 
 02.28.~ Az ötlet gondolatának megszületése ~ 
+
 03.07. ~ Frontend tervének megbeszélése ~ 
+
 03.14. ~ Dokumentáció elkezdése ~ 
+
 03.21 ~ Dokumentáció befejezése ~!
+
 03.28 ~ Dokumentáció helyesírásának javítása  ~ 
+
 04.04. ~ Programkód elkezdése ~! 
+
 04.11. ~ Program funkciók hozzáadása ~ 
+
 04.18. ~ Utolsó funkciók hozzáadása ~ 
+
 04.25.  ~ Projekt funkciók bemutatása ~ 
+
 05.02.  ~ Végleges kinézet hozzáadása ~
+
 05. 09. ~ Végső tesztelések ~ 
+
 05. 16. ~ Hibajavítások ~ 
+
 05. 23.  ~ Végleges program bemutatása ~!
