@@ -190,3 +190,23 @@ A rendszer internet hiányában is működtethető importálás megtörténte fe
 A szoftver egy nagyon egyszerű menürendszert tartalmaz. Bejelentkezés után a felhasználót az oldal egyből a főoldal fogadja ahol létre is hozhatja az első rendezvényét vagy innen tud átlépni más menü pontokba is. Ilyen az adatait tartalmazó menüpont is ahol testre szabhatja felhasználói képét valamint nevet és jelszót változtatott és a meghívó elfogadási menü is.
 
 ![Megnevezetlen diagram](https://user-images.githubusercontent.com/113434354/226110672-f691b8e1-e0d8-455c-a13a-4e7f50fe2156.jpg)
+
+# 6. Fizikai környezet 
+
+### Vásárolt szoftverkomponensek és külső rendszerek 
+
+Nem igényel vásárolt szoftverkomponenst ugyanis bármilyen webböngésző és internet kapcsolat rendelkezés feltétele mellett bárki futtatni tudja. 
+
+### Hardver topológia 
+
+Az oldal elektronikai eszközön(laptop, telefon) amely rendelkezik egy böngészővel könnyedén futtatható hiba nélkül. 
+
+### Fizikai alrendszerek 
+
+Egy böngésző, amely az elektronikai eszközön fut abba lehetséges az oldal futtatása és megtekintése. (például: Internet Explorer, Chrome, Mozilla Firefox, Opera Browser stb.) 
+
+### Fejlesztő eszközök:
+- Figma
+- Trello
+- Github 
+- Visual Studio Code (PHP, HTML, tailwind CSS, Javascript, Nextjs, react )
