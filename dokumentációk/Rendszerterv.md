@@ -47,12 +47,12 @@ Az értelmezést segítő, az elkészítéshez felhasznált dokumentumok felsoro
 
 # 2. Projektterv
 
-## 2.1 Projektszerepkörök, felelőségek: 
+## 2.1 Projektszerepkörök, felelőségek:
 - Scrum masters: Palotai Marcell Martin
 - Product owner: Palotai Marcell Martin 
 - Üzleti szereplő: Palotai Marcell Martin
 
-## 2.2 Projektmunkások és felelőségek:
+## 2.2 Projektmunkások és felelőségek
 Frontend: 
 - Elsődleges: Petrovics Tímea     
 - Másodlagos: Pataki Tamás-
@@ -78,3 +78,19 @@ Tesztelés: 
 | Program                   | Képernyőterv elkészítése | 3         | 4       | 5                | 5                | 3                 |
 | Program                   | Prototípus elkészítése   | 4         | 8       | 9                | 8                | 8                 |
 | Program                   | Alapfunkciók elkészítése | 3         | 8       | 8                | 9                | 7                  |
+
+## 2.4 Mérföldkövek
+
+02.28.~ Az ötlet gondolatának megszületése ~ 
+03.07. ~ Frontend tervének megbeszélése ~ 
+03.14. ~ Dokumentáció elkezdése ~ 
+03.21 ~ Dokumentáció befejezése ~!
+03.28 ~ Dokumentáció helyesírásának javítása  ~ 
+04.04. ~ Programkód elkezdése ~! 
+04.11. ~ Program funkciók hozzáadása ~ 
+04.18. ~ Utolsó funkciók hozzáadása ~ 
+04.25.  ~ Projekt funkciók bemutatása ~ 
+05.02.  ~ Végleges kinézet hozzáadása ~
+05. 09. ~ Végső tesztelések ~ 
+05. 16. ~ Hibajavítások ~ 
+05. 23.  ~ Végleges program bemutatása ~!
