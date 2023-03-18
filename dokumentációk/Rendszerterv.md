@@ -217,9 +217,12 @@ Backend: A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben 
 
 Web Kliens: A web alkalmazás react keretrendszer használatával készül el. A rest api-hoz a user belépését követően egyedi api-key segítségével lehet hozzáférni, ez biztosítja, hogy illetéktelen felhasználók ne módosíthassák az adatokat.
 
-# 9. Adatbázis terv 
+# 8. Adatbázis terv 
 
 ![adatbazis_terv](https://user-images.githubusercontent.com/113434354/226110938-4e1ee956-537b-4a2e-acbd-38112c6b71e2.jpg)
 
+# 9. Implementációs terv 
 
+Leírja milyen technológiákat használunk hogyan és miért. A programok objektum orientált programozási paradigma használatával. 
 
+A Webes felület Nextjs, react alapú oldal, MYSQL segítségével adatokat tárol, HTML és Tailwind  CSS kód segítségével könnyedén megtekinthető böngészőben. Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság, és könnyebb bővítés érdekében. Képes lesz felhasználni a Backend részen futó REST szolgáltatás metódusait, ezáltal tud felvinni és lekérdezni adatokat az adatbázisból. Az eltelt időt a kliens fogja számolni a feladatoknál, hogy ne legyenek eltérések. 
