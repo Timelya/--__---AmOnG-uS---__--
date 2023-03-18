@@ -44,3 +44,10 @@ Az informatikai rendszertervnek nem célja, hogy az üzleti funkciókat megvaló
 -   Rendszerterv 
 - Funkcionális specifikáció 
 Az értelmezést segítő, az elkészítéshez felhasznált dokumentumok felsorolása. A tartalmi elem megadja azon dokumentumokat, amelyek olyan információkat tartalmaznak, amelyek kiegészítik az informatikai rendszertervet. 
+
+# 2. Projektterv
+
+## 2.1 Projektszerepkörök, felelőségek: 
+- Scrum masters: Palotai Marcell Martin
+- Product owner: Palotai Marcell Martin 
+- Üzleti szereplő: Palotai Marcell Martin
