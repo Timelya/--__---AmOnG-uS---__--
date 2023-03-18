@@ -101,8 +101,8 @@ Tesztelés: 
 
 05.02.  ~ Végleges kinézet hozzáadása ~
 
-05. 09. ~ Végső tesztelések ~ 
+05.09. ~ Végső tesztelések ~ 
 
-05. 16. ~ Hibajavítások ~ 
+05.16. ~ Hibajavítások ~ 
 
-05. 23.  ~ Végleges program bemutatása ~!
+05.23. ~ Végleges program bemutatása ~!
