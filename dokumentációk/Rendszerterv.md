@@ -226,3 +226,11 @@ Web Kliens: A web alkalmazás react keretrendszer használatával készül el. A
 Leírja milyen technológiákat használunk hogyan és miért. A programok objektum orientált programozási paradigma használatával. 
 
 A Webes felület Nextjs, react alapú oldal, MYSQL segítségével adatokat tárol, HTML és Tailwind  CSS kód segítségével könnyedén megtekinthető böngészőben. Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság, és könnyebb bővítés érdekében. Képes lesz felhasználni a Backend részen futó REST szolgáltatás metódusait, ezáltal tud felvinni és lekérdezni adatokat az adatbázisból. Az eltelt időt a kliens fogja számolni a feladatoknál, hogy ne legyenek eltérések. 
+
+# 10. Tesztterv
+
+A tesztelések célja a rendszer és komponensei funkcionalitásának teljes vizsgálata, 
+
+ellenőrzése a rendszer által megvalósított üzleti szolgáltatások verifikálása. A teszteléseket a fejlesztői csapat minden tagja elvégzi. Egy teszt eredményeit a tagok dokumentálják külön fájlokba. 
+
+Leírja a tesztelés folyamatát mikor milyen tesztek lesznek elvégezve. A tesztelések célja a rendszer és komponensei funkcionalitásának teljes vizsgálata, ellenőrzése, a rendszer által megvalósított üzleti szolgáltatások verifikálása. 
