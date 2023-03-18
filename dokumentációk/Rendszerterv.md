@@ -67,3 +67,14 @@ Tesztelés: 
 - Elsődleges: Pataki Tamás   
 - Másodlagos: Petrovics Tímea
 - Harmadlagos: Rokob Attila Adrián
+
+## 2.3 Ütemterv
+
+| Funkció                   | Feladat                  | Prioritás | Becslés | Aktuális becslés | Eltelt idő (nap) | Becsült idő (nap) |
+| ------------------------- | ------------------------ | --------- | ------- | ---------------- | ---------------- | ----------------- |
+| Követelmény specifikáció  | Megírás                  | 2         | 2       | 1,5              | 2                | 2                 |
+| Funkcionális specifikáció | Megírás                  | 1,5       | 1       | 1,5              | 1                | 1                 |
+| Rendszerterv              | Megírás                  | 1         | 2       | 2                | 1                | 3                 |
+| Program                   | Képernyőterv elkészítése | 3         | 4       | 5                | 5                | 3                 |
+| Program                   | Prototípus elkészítése   | 4         | 8       | 9                | 8                | 8                 |
+| Program                   | Alapfunkciók elkészítése | 3         | 8       | 8                | 9                | 7                  |
