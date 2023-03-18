@@ -141,7 +141,7 @@ Kijelentkezés: 
 	ki tud lépni a felhasználó a profiljából
 # 4. Követelmények 
 
-Funkcionális követelmények
+## 4.1 Funkcionális követelmények
 
 | ID  | Csoport            | Megnevezés             | Leírás                                                               |
 |:----|:-------------------|:-----------------------|:---------------------------------------------------------------------|
@@ -157,5 +157,12 @@ Funkcionális követelmények
 | K10 | Backend            | Megívók                | A meghívó elfogadás és elutasítás lehetséges&nbsp;                   |
 | K11 | Backend            | Rendezvény lista       | A rendezvény lista megjelenik és utólag módosítható&nbsp;            |
 | K12 | Backend            | Rendezvény létrehozása | A rendezvény létrehozás lehetséges különböző paraméter adással&nbsp; |  
+
+## 4.2 Nemfunkcionális követelmények
+
+| id  | Csoport | Megvenezés        | Leírás |
+| --- | ------- | ----------------- | ------ |
+| K1  | Kinézet | Letitszult design | A program ablakainak a kinézete legyen letisztult, átlátható, könnyen használható. Törekszik a lehető legkényelmesebb megjelenésre. 
+
 
 
