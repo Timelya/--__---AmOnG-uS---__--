@@ -26,5 +26,11 @@ ________________________________________________________________________________
 
 <br><br><br>
 
+# 1. A rendszer célja 
 
+Leírja hogy mit szeretne megoldani a rendszer. 
+
+A rendszer célja, hogy a felhasználók könnyedén hozzanak létre rendezvényeket és arra hívjanak meg más felhasználókat. Napjainkban nagyon sok a hasonló tematikájú oldal ám ezek legtöbbje fizetett hirdetést tartalmaz melyet mi feltétlenül el szeretnénk kerülni. Generációk közötti hidakat átlépve szándékunk hogy minden korosztály könnyen kezelje az oldalunk ezért fontos számunkra a letisztult felület. 
+
+A rendszer az adatokat egy Web Service segítségével kapja az adatbázisból. Mivel az alkalmazást csak webes felületen, szeretnénk elérhetővé tenni, nem célunk hogy más, például IOS operációs rendszerrel rendelkező eszközön fusson. 
 
