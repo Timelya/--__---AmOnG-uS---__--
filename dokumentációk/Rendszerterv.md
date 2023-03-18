@@ -234,3 +234,25 @@ A tesztelések célja a rendszer és komponensei funkcionalitásának teljes viz
 ellenőrzése a rendszer által megvalósított üzleti szolgáltatások verifikálása. A teszteléseket a fejlesztői csapat minden tagja elvégzi. Egy teszt eredményeit a tagok dokumentálják külön fájlokba. 
 
 Leírja a tesztelés folyamatát mikor milyen tesztek lesznek elvégezve. A tesztelések célja a rendszer és komponensei funkcionalitásának teljes vizsgálata, ellenőrzése, a rendszer által megvalósított üzleti szolgáltatások verifikálása. 
+
+## Tesztelési eljárások 
+
+### Unit teszt
+
+Ahol csak lehetséges, szükséges már a fejlesztési idő alatt is tesztelni, hogy a metódusok megfelelően működnek-e. Ezért a metódusok megfelelő működésének biztosítására mindegyikhez írni kell Unit teszteket, a minél nagyobb kódlefedettséget szem előtt tartva. A metódusok akkor vannak kész, ha a tesztesetek hiba nélkül lefutnak az egyes metódusokon. 
+
+### Alfa teszt
+
+Az elsődleges célja az eddig meglévő funkcióknak a különböző böngészőkkel, és androidokkal való kompatibilitásának tesztelése. A tesztet a fejlesztők végzik. Az eljárás sikeres, ha különböző böngészőkben és különböző androidokon is megfelelően működnek a különböző funkciók. A teszt időtartama egy hét. 
+
+### Beta teszt
+
+Ezt a tesztet nem a fejlesztők végzik. Tesztelendő böngészők: Opera, Firefox, Google Chrome, Safari. A tesztelés alatt a tesztelő felhasználók visszajelzéseket küldhetnek a fejlesztőknek, probléma/hiba felmerülése esetén. Ha hiba lép fel, a fejlesztők kijavítják a lehető leghamarabb. 
+
+### A tesztelési jegyzőkönyv kitöltésére egy sablon: 
+- Tesztelő: Vezetéknév Keresztnév 
+- Tesztelés dátuma: Év.Hónap.Nap 
+- Tesztszám, Rövid leírás, Várt eredmény, Eredmény, Megjegyzés 
+
+Például.: #01 Kép A kép látható és változik, A kép változik Nem találtam problémát.
+Továbbit részletes tesztek: Teszt.md
