@@ -115,7 +115,7 @@ A kezdeti szakaszban meg kell határozni a felhasználók igényeket és az elv�
 
 A felhasználó a főoldalon tud bejelentkezni (e-mail, jelszó), valamint a regisztrációt megkezdeni, mely egy új oldalon folytatódik (felhasználónév, jelszó, e-mail). Bejelentkezést követően lehetőséget, hozzáférést kap az oldal további funkcióihoz. Az ügyfélnek lehetősége van a főoldalon rendezvényt létrehozni és az igénye szerint variálni. Az ügyfél megadja a rendezvény típusát, a résztvevők számát, az esemény időpontját, a helyszínt és az egyéb szolgáltatásokat mint például a ruházati stílust.
 
-# 3.1 Üzleti szereplők 
+## 3.1 Üzleti szereplők 
 
 Az oldal regisztrációt igényel a megtekintéséhez. Bármely eszközön megtekinthető és használható internet kapcsolat és webböngésző feltétele mellett. Nem igényel szoftvertelepítést azonban böngészőnek kell, lennie a felhasználó eszközén ám ez lehet egy alap böngésző például: Internet Explorer is. Az a döntés, hogy milyen eszközön és milyen böngészőben nyitja meg az oldalt a felhasználó az teljesen rá és a meglévő eszközökre van bízva.
 
@@ -139,4 +139,23 @@ Rendezvények: 
 
 Kijelentkezés: 
 	ki tud lépni a felhasználó a profiljából
+# 4. Követelmények 
+
+Funkcionális követelmények
+
+| ID  | Csoport            | Megnevezés             | Leírás                                                               |
+|:----|:-------------------|:-----------------------|:---------------------------------------------------------------------|
+| K1  | Backend            | Kód                    | Gyors betöltés, hibamentes működés, szép kódolás&nbsp;               |
+| K2  | Frontend           | Menüsor                | A menüsor működik és a megfelelő oldalra dob kattintás után.&nbsp;   |
+| K3  | Profil szerkesztés | Név módosítás          | A felhasználó<div>nevét lehet módosítani vele&nbsp;</div>            |
+| K4  | Profil Szerkesztés | Jelszó módosítás       | A felhasználó a jelszavát tudja módosítani vele&nbsp;                |
+| K5  | Profil Szerkesztés | Email módosítás        | A felhasználó az email címét tudja módosítani vele&nbsp;             |
+| K6  | Profil Szerkesztés | Leírás módosítás       | A felhasználó a leírást tud hozzáadni vele&nbsp;                     |
+| K7  | Profil Szerkesztés | Telefonszám hozzáadás  | A felhasználó a telefonszámot tud hozzáadni vele&nbsp;               |
+| K8  | Profil Szerkesztés | Város hozzáadás        | A felhasználó a várost tud hozzáadni vele&nbsp;                      |
+| K9  | Profil Szerkesztés | Ország hozzáadás       | A felhasználó a országot tud hozzáadni vele&nbsp;                    |
+| K10 | Backend            | Megívók                | A meghívó elfogadás és elutasítás lehetséges&nbsp;                   |
+| K11 | Backend            | Rendezvény lista       | A rendezvény lista megjelenik és utólag módosítható&nbsp;            |
+| K12 | Backend            | Rendezvény létrehozása | A rendezvény létrehozás lehetséges különböző paraméter adással&nbsp; |  
+
 
