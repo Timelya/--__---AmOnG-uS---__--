@@ -114,3 +114,9 @@ Bővebben kifejtjük azt a folyamatot, amit a programunk szeretne kibővíteni.�
 A kezdeti szakaszban meg kell határozni a felhasználók igényeket és az elvárásokat. Ez magában foglalja a rendezvény típusát, a résztvevők számát, az esemény időpontját, a helyszínt és az egyéb szolgáltatásokat. A felhasználó tervezik meg az eseményt, és meghatározzák a részleteket. 
 
 A felhasználó a főoldalon tud bejelentkezni (e-mail, jelszó), valamint a regisztrációt megkezdeni, mely egy új oldalon folytatódik (felhasználónév, jelszó, e-mail). Bejelentkezést követően lehetőséget, hozzáférést kap az oldal további funkcióihoz. Az ügyfélnek lehetősége van a főoldalon rendezvényt létrehozni és az igénye szerint variálni. Az ügyfél megadja a rendezvény típusát, a résztvevők számát, az esemény időpontját, a helyszínt és az egyéb szolgáltatásokat mint például a ruházati stílust.
+
+# 3.1 Üzleti szereplők 
+
+Az oldal regisztrációt igényel a megtekintéséhez. Bármely eszközön megtekinthető és használható internet kapcsolat és webböngésző feltétele mellett. Nem igényel szoftvertelepítést azonban böngészőnek kell, lennie a felhasználó eszközén ám ez lehet egy alap böngésző például: Internet Explorer is. Az a döntés, hogy milyen eszközön és milyen böngészőben nyitja meg az oldalt a felhasználó az teljesen rá és a meglévő eszközökre van bízva.
+![folyamatok modellje](https://user-images.githubusercontent.com/113434354/226108659-20fd3228-7ab3-4934-9b69-140f505d479e.jpg)
+
