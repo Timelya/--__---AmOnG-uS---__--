@@ -164,5 +164,6 @@ Kijelentkezés: 
 | --- | ------- | ----------------- | ------ |
 | K1  | Kinézet | Letitszult design | A program ablakainak a kinézete legyen letisztult, átlátható, könnyen használható. Törekszik a lehető legkényelmesebb megjelenésre. 
 
+## 4.3 Támogatott eszközök
 
-
+A szoftver webes felületéhez csak egy ajánlott böngésző telepítése szükséges (Google Chrome, Firefox, Opera, Safari), külön szoftver nem kell hozzá. A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek.
