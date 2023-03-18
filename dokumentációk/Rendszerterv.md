@@ -167,3 +167,20 @@ Kijelentkezés: 
 ## 4.3 Támogatott eszközök
 
 A szoftver webes felületéhez csak egy ajánlott böngésző telepítése szükséges (Google Chrome, Firefox, Opera, Safari), külön szoftver nem kell hozzá. A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek.
+
+# 5. Funkcionális terv 
+
+Leírja a felhasználói szerepköröket, és hogy milyen feladatokat tudnak csinálni. 
+
+## 5.1 Rendszerszereplők 
+
+A rendszer internet hiányában is működtethető importálás megtörténte feltétele mellett. Jogosultsági körben a felhasználók között kettőt különböztetünk meg az admin és az egyszerű felhasználót. Az admin felhasználó több olyan funkciót is lát amit más felhasználók nem tekinthetnek meg és/vagy nincs joguk azon változtatásához. 
+
+-   ADMIN 
+	-   Teljes hozzáférése van a rendszerhez. 
+	-   A felhasználói adatokat látják, változtathatják. 
+	-   Felhasználó hozzáadására, törlésére, adatok módosítására van lehetőségük. 
+-   Felhasználók: 
+	-   Rendezvény létrehozása. 
+	-   Meghívó elfogadása/elutasítása. 
+	-   Saját adatainak módosítására.
