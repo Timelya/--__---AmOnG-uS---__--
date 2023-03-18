@@ -257,9 +257,37 @@ Ezt a tesztet nem a fejlesztők végzik. Tesztelendő böngészők: Opera, Firef
 Például.: #01 Kép A kép látható és változik, A kép változik Nem találtam problémát.
 Továbbit részletes tesztek: Teszt.md
 
-# 12. Telepítési terv 
+# 11. Telepítési terv 
 
 Leírja hogyan kell telepíteni a programot. 
 
 **Webes alkalmazás** 
 - A szoftver webes felületéhez csak egy ajánlott böngésző telepítése szükséges (Google Chrome, Firefox, Opera, Safari), külön szoftver nem kell hozzá. A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek.
+
+# 12. Karbantartási terv 
+
+Az alkalmazás folyamatos üzemeltetése és karbantartása, mely magában foglalja a programhibák elhárítását, a belső igények változása miatti módosításokat, valamint a környezeti feltételek változása miatt megfogalmazott program-, illetve állomány módosítási igényeket. 
+
+Figyelembe kell venni a felhasználó által jött visszajelzést is a programmal kapcsolatban. Ha hibát talált, mielőbb orvosolni kell, lehet az: 
+-   Működéssel kapcsolatos    
+-   Kinézet, dizájnnal kapcsolatos    
+
+Elkerülhetetlen ellenőrzési folyamatok 
+-   Az oldal betölt hibátlanul (nem lassú, látható) 
+-   Az újabb funkció működnek 
+-   Az oldal kinézete nincs elcsúszva és minden eszközön látható     
+-   a kódolás jól működik     
+-   a program nem lassul be    
+
+Alkalmanként ellenőrzési terv: 
+-   Kód modernizálása     
+-   Rendszeres téma bővitése     
+-   Korszerűsített frontend változtatások     
+-   Felhasználók által adott hibák és kiskapuk kezelése/javítása     
+
+Karbantartás 
+
+-   Corrective Maintenance: A felhasználók által felfedezett és "user reportban" elküldött hibák kijavítása.     
+-   Adaptive Maintenance: A program naprakészen tartása és finomhangolása.     
+-   Perfective Maintenance: A szoftver hosszútávú használata érdekében végzett módosítások, új funkciók, a szoftver teljesítményének és működési megbízhatóságának javítása. 
+-   Preventive Maintenance: Olyan problémák elhárítása, amelyek még nem tűnnek fontosnak, de később komoly problémákat okozhatnak.
