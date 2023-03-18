@@ -37,3 +37,10 @@ A rendszer az adatokat egy Web Service segítségével kapja az adatbázisból. 
 ## 1.2. Dokumentumnak nem célja 
 
 Az informatikai rendszertervnek nem célja, hogy az üzleti funkciókat megvalósító algoritmusokat ismertesse. Az informatikai rendszerterv a műszaki kereteket definiálja, de nem tér ki minden funkcionális elem részletes műszaki megvalósítására. 
+
+## 1.3. Felhasznált dokumentumok 
+
+-   Követelmény specifikáció      
+-   Rendszerterv 
+- Funkcionális specifikáció 
+Az értelmezést segítő, az elkészítéshez felhasznált dokumentumok felsorolása. A tartalmi elem megadja azon dokumentumokat, amelyek olyan információkat tartalmaznak, amelyek kiegészítik az informatikai rendszertervet. 
