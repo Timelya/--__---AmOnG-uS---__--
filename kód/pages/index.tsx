@@ -4,7 +4,7 @@ import { useState } from "react";
 import { prisma } from "../lib/prisma";
 import { useRouter } from "next/router";
 import Navbar from "./Components/Navbar";
-import { getUsers } from "./Components/getServerSideProps";
+import { getUsers } from "./Components/UNUSEDgetServerSideProps";
 
 
 

@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { useState } from 'react'
 import { prisma } from '../../lib/prisma'
 import { useRouter } from 'next/router'
-import { getUsers } from "./getServerSideProps";
+import { getUsers } from "./UNUSEDgetServerSideProps";
 
 function Navbar()
 {
