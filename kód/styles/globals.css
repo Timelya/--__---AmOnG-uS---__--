@@ -1,3 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+        head {
+            background-color: bg-white;
+        }
+        
+        body {
+            background-color: bg-white;
+        }
+        
+        #regText {
+            /* Regisztrálj cim felirat */
+            font-family: 'Roboto';
+            font-style: normal;
+            font-size: 280%;
+            line-height: 160%;
+            text-align: center;
+            background: linear-gradient(180deg, #000000 0.01%, #000346 71.02%, #000000 100%);
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .square {
+            /* regisztrációs doboz */
+            box-sizing: border-box;
+            display: block;
+            padding-bottom: 10%;
+            padding-top: 2%;
+            width: 30%;
+            height: 90%;
+            background: linear-gradient(0deg, #CFC2E3, #CFC2E3);
+        }
