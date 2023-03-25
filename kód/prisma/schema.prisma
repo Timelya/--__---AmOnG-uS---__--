@@ -15,8 +15,8 @@ model user {
 }
 
 model event {
-  id    Int       @id @default(autoincrement())
-  name  String    @db.VarChar(255)
-  start DateTime? @db.Timestamp(0)
-  end   DateTime? @db.Timestamp(0)
+  id    Int     @id @default(autoincrement())
+  name  String  @db.VarChar(255)
+  start String? @db.VarChar(255)
+  end   String? @db.VarChar(255)
 }
