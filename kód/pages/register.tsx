@@ -59,7 +59,7 @@ const Register: NextPage<User> = ({ users }) => {
     }
     // CREATE
     data.password = sha256(data.password);
-      fetch("api/create", {
+      fetch("api/createUser", {
       body: JSON.stringify(data),
       headers: {
         "Content-Type": "application/json",

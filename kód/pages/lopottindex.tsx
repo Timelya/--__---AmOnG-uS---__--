@@ -41,7 +41,7 @@ const Home: NextPage<User> = ({ users }) => {
         // Check input is not blank
         if (data.name) {
           // CREATE
-          fetch('api/create', {
+          fetch('api/createUser', {
             body: JSON.stringify(data),
             headers: {
               'Content-Type': 'application/json'

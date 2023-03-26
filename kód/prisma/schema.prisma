@@ -9,7 +9,14 @@ datasource db {
 
 model user {
   id       Int      @id @default(autoincrement())
-  name     String   @unique(map: "User_name_key")
+  name     String
   password String
   created  DateTime @default(now())
+}
+
+model event {
+  id    Int     @id @default(autoincrement())
+  name  String  @db.VarChar(255)
+  start String? @db.VarChar(255)
+  end   String? @db.VarChar(255)
 }
