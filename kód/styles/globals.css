@@ -1,112 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-#regText {
-    /* Regisztrálj cim felirat */
+
+#regisztrációsCímSzöveg {
     font-family: 'arial';
-    font-style: normal;
+    font-weight: bold;
     font-size: 180%;
     line-height: 160%;
     text-align: center;
-    box-shadow: 8px 8px 10px 0 #ff1493, -5px -5px 5px 0 #00f, 5px 5px 15px 0 rgb(144, 95, 159);
+    box-shadow: 10px 10px 20px 0 #ff1493, -10px -10px 20px 0 #00f, 10px 10px 50px 0 rgb(144, 95, 159);
     background: linear-gradient(-60deg, #D60270 50%, #0038A8 50%);
+    
+    
 }
-
-#regColPink {
-    -webkit-text-fill-color: #D60270;
-}
-
-#regColBlue {
-    -webkit-text-fill-color: #0038A8;
-}
-
-#line {
-    width: 100%;
-    border: 2px solid rgba(21, 24, 109, 0.6);
-    backdrop-filter: blur(3px);
-}
-
-#text {
-    font-family: 'Inter';
-    font-style: normal;
-    font-size: 20px;
+.labelFeliratok {
+    font-size: 25px;
     letter-spacing: 0.1em;
-    color: #000351;
+    font-weight: 600;
+    color: #000627;
 }
+#gomb{
+width: 243px;
+height: 72.62px;
+left: 204px;
+top: 511.68px;
 
-table.data {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    margin: 0 auto;
+filter: drop-shadow(15.7706px -13.6678px 112.497px rgba(248, 0, 59, 0.3)) drop-shadow(-14.7192px 17.3476px 84.1097px rgba(0, 56, 255, 0.3));
 }
-
-td {
-    padding: 0 0 5px 0;
+.label{
+    border-bottom: 2px solid rgba(23, 0, 53, 0.6);
+    width: 450px;
+    height: 70px;
+    background-color: transparent;
 }
-
-td:first-child {
-    min-width: 100px;
-    width: 17.5%;
-}
-
-tr:last-child td {
-    padding-bottom: 0;
-}
-
-.inputbox {
-    border: 1px solid #d4d4d4;
-    border-bottom-right-radius: 2em;
-    border-top-right-radius: 2em;
-    display: block;
-    width: 90%;
-    padding: 8px;
-    font-size: 100%;
-    margin: 0;
-}
-
-.labelbox {
-    border-bottom-left-radius: 2em;
-    border-top-left-radius: 2em;
-    padding: 8px;
-    display: block;
-    border: 1px solid #d4d4d4;
-    background: #e9f939;
-    /* Old browsers */
-    padding-right: 5px;
-    color: black;
-    text-align: center;
-}
-
-=======@tailwind base;
-@tailwind components;
-@tailwind utilities;
 body {
+    /* a háttér sötítésére szolgál */
     background: #333333;
 }
-
-#regText {
-    /* Regisztrálj cim felirat */
-    font-family: "arial";
-    font-style: normal;
-    font-size: 280%;
-    line-height: 160%;
+.center {
+    margin: auto;
     text-align: center;
-    background: linear-gradient( 180deg, #000000 0.01%, #000346 71.02%, #000000 100%);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.square {
-    /* regisztrációs doboz */
-    box-sizing: border-box;
-    display: block;
-    padding-bottom: 10%;
-    padding-top: 2%;
-    width: 20%;
-    height: 90%;
-    background: linear-gradient(0deg, #cfc2e3, #cfc2e3);
-    border-radius: 15px;
-}
-
->>>>>>>dbe07fee621a53817ccf764a42ca56d2f76ea752
+  }
