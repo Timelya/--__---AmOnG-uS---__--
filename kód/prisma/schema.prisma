@@ -10,9 +10,9 @@ datasource db {
 model user {
   id       Int      @id @default(autoincrement())
   name     String
-  email    String
   password String
   created  DateTime @default(now())
+  email    String
 }
 
 model event {
