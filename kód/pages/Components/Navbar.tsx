@@ -4,18 +4,19 @@ import { Icon } from '@iconify/react';
 
 // Be sure to include styles at some point, probably during your bootstraping
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
+import { DarkThemeToggle } from 'flowbite-react';
 
 function Navbar() 
 {
   return (
     <>
+    <nav className="bg-slate-600">
       <SideNav
     onSelect={(selected) => {
         // Add your code here
-    }}
->
+    }}>
     <SideNav.Toggle />
-    <SideNav.Nav defaultSelected="home">
+    <SideNav.Nav  defaultSelected="home">
         <NavItem eventKey="Rendezvény létrehozás">
         <NavIcon><Icon icon="material-symbols:event-upcoming" className="pl-2 text-4xl ..."/></NavIcon>
             <NavText>
@@ -54,6 +55,7 @@ function Navbar()
 
     </SideNav.Nav>
 </SideNav>
+</nav>
     </>
   )
 }
