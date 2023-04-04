@@ -87,16 +87,14 @@ const Register: NextPage<User> = ({ users }) => {
         <meta charSet="utf-8" />
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/css/styles.css" />
       </Head>
-
-      <div>
+      <div className="bg-stone-700 text-amber-200...">
         <div className="section">
           <div className="container">
             <div className="row full-height justify-content-center">
               <div className="col-12 text-center align-self-center py-5">
                 <div className="section pb-5 pt-5 pt-sm-2 text-center">
-                  <h6 className="mb-0 pb-3"><span>Jelentkezz be </span><span> Regisztrálj</span></h6>
+                  <div className="mb-0 pb-3"><span>Jelentkezz be </span><span> Regisztrálj</span></div>
                   <form onSubmit={(e) => { e.preventDefault(); handleSubmit(form); }}>
                     <input className="checkbox" type="checkbox" id="reg-log" name="reg-log" />
                     <label htmlFor="reg-log" />
@@ -105,7 +103,7 @@ const Register: NextPage<User> = ({ users }) => {
                         <div className="card-front">
                           <div className="center-wrap">
                             <div className="section text-center">
-                              <h4 className="mb-4 pb-3">Jelentkezz be</h4>
+                              <div className="mb-4 pb-3">Jelentkezz be</div>
                               <form onSubmit={(e) => { e.preventDefault(); handleSubmit(form); }}>
                                 <div className="form-group">
                                   <input type="email" className="form-style" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="Email" />
@@ -116,16 +114,16 @@ const Register: NextPage<User> = ({ users }) => {
                                   <i className="input-icon uil uil-lock-alt" />
                                 </div>
                                 <button type="submit" className="btn mt-4">
-                                    Login{" "}
-                                  </button>
-                                </form>
+                                  Login{" "}
+                                </button>
+                              </form>
                             </div>
                           </div>
                         </div>
                         <div className="card-back">
                           <div className="center-wrap">
                             <div className="section text-center">
-                              <h4 className="mb-3 pb-3">Regisztrálj</h4>
+                              <div className="mb-3 pb-3">Regisztrálj</div>
                               <div className="form-group">
                                 <input
                                   placeholder="Név"

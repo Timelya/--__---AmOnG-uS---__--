@@ -8,7 +8,7 @@ const EventAdd = () => {
   ];
 
   return (
-    <table>
+    <table className="ml-5...">
       <thead>
         <tr>
           <th>Name</th>

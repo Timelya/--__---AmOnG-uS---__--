@@ -3,9 +3,10 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     line-height: 1.7;
-    color: #fbec7d;
     background-attachment: fixed;
     background-size: cover;
+    background: #333;
+    color: #f2f2ac;
 }
 
 a:hover {

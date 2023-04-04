@@ -13,9 +13,13 @@ function DarkMode() {
     const body = document.querySelector('body');
     if (body?.style) {
       if (isDarkMode) {
-      body.style.backgroundColor = '#333';
+      body.style.marginLeft = '100px';
+        body.style.backgroundColor = '#fff';
+        body.style.color = '#191918';
      } else {
-      body.style.backgroundColor = '#fff';
+      body.style.backgroundColor = '#333';
+      body.style.color = '#f2f2ac';
+      body.style.marginLeft = '100px';
        }
       }
   }, [isDarkMode]);
@@ -23,7 +27,7 @@ function DarkMode() {
   return (
     <div>
       <input type="checkbox" id="hatterkapcsolo" onChange={handleHatterValtozas} />
-      <label htmlFor="hatterkapcsolo" className="text-black">Szinnnnnnnnnnnnnnnnnnnnnnnnnnnn!!</label>
+      <label htmlFor="hatterkapcsolo">Szinnn!!</label>
     </div>
   );
 }
