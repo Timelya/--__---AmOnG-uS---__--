@@ -56,7 +56,6 @@ const Register: NextPage<User> = ({ users }) => {
       alert("A megadott jelszavak nem egyeznek");
       return;
     }
-    console.log(users)
     if (users.find(x => x.name == data.name)) {
       alert("Foglalt felhasználónév");
       return;
@@ -104,7 +103,6 @@ const Register: NextPage<User> = ({ users }) => {
                           <div className="center-wrap">
                             <div className="section text-center">
                               <div className="mb-4 pb-3">Jelentkezz be</div>
-                              <form onSubmit={(e) => { e.preventDefault(); handleSubmit(form); }}>
                                 <div className="form-group">
                                   <input type="email" className="form-style" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="Email" />
                                   <i className="input-icon uil uil-at" />
@@ -116,7 +114,6 @@ const Register: NextPage<User> = ({ users }) => {
                                 <button type="submit" className="btn mt-4">
                                   Login{" "}
                                 </button>
-                              </form>
                             </div>
                           </div>
                         </div>
