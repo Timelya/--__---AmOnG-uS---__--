@@ -165,7 +165,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
       password: true,
     },
   });
-  console.log(users)
   return {
     props: {
       users,
