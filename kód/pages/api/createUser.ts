@@ -2,20 +2,22 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import { prisma } from "../../lib/prisma"
 
 type Data = {
-  name: string
+  name: string,
+  email: string
 }
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const {name, password} = req.body
+  const {name, email, password} = req.body
 
   try {
     // CREATE
     await prisma.user.create({
       data: {
         name,
+        email,
         password
       }
     })

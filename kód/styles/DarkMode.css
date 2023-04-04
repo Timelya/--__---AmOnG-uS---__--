@@ -1,0 +1,9 @@
+html {
+    background-color: #333;
+    margin-left: 21.5px;
+}
+
+html.dark-mode {
+    background-color: #fff;
+    margin-left: 21.5px;
+}

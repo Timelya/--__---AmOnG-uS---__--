@@ -33,9 +33,6 @@ const Login: NextPage<User> = ({ users }) => {
   const router = useRouter();
 
   async function handleSubmit(data: FormData) {
-    // console.log(data)
-    // console.log(newUser)
-
     try {
       if(!users.find((x) => x.name == data.name && x.password == sha256(data.password)))
       {

@@ -12,6 +12,7 @@ model user {
   name     String
   password String
   created  DateTime @default(now())
+  email    String
 }
 
 model event {
