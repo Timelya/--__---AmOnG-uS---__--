@@ -10,8 +10,7 @@ function Navbar()
 {
   return (
     <>
-    <nav className="bg-slate-600">
-      <SideNav
+<SideNav
     onSelect={(selected) => {
         // Add your code here
     }}>
@@ -55,7 +54,6 @@ function Navbar()
 
     </SideNav.Nav>
 </SideNav>
-</nav>
     </>
   )
 }

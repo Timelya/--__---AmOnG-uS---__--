@@ -18,14 +18,16 @@
     "moment": "^2.29.4",
     "next": "12.2.4",
     "react": "^18.2.0",
+    "react-body": "^0.2.0",
     "react-dom": "18.2.0",
+    "react-table": "^7.8.0",
     "styled-components": "^5.3.9"
   },
   "devDependencies": {
     "@iconify/react": "^4.1.0",
     "@types/node": "18.7.1",
-    "@types/react": "18.0.17",
-    "@types/react-dom": "18.0.6",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.8",
     "css-loader": "^6.7.3",
     "eslint": "8.21.0",

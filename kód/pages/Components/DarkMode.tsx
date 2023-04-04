@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function DarkMode() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -8,11 +8,23 @@ function DarkMode() {
     setIsDarkMode(e.target.checked);
   }
 
+  // Oldal háttérszínének beállítása a sötét módban
+  useEffect(() => {
+    const body = document.querySelector('body');
+    if (body?.style) {
+      if (isDarkMode) {
+      body.style.backgroundColor = '#333';
+     } else {
+      body.style.backgroundColor = '#fff';
+       }
+      }
+  }, [isDarkMode]);
+
   return (
-    <body className={isDarkMode ? 'dark-mode' : ''}>
+    <div>
       <input type="checkbox" id="hatterkapcsolo" onChange={handleHatterValtozas} />
-      <label htmlFor="hatterkapcsolo">Háttérgradiens váltása</label>
-    </body>
+      <label htmlFor="hatterkapcsolo" className="text-black">Szinnnnnnnnnnnnnnnnnnnnnnnnnnnn!!</label>
+    </div>
   );
 }
 

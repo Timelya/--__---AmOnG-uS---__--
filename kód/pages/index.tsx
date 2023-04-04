@@ -8,6 +8,8 @@ import EventCard from "./Components/EventCard";
 import { getUsers } from "./Components/UNUSEDgetServerSideProps";
 import { GetServerSideProps } from "next";
 import DarkMode from "./Components/DarkMode";
+import EventAdd from "./Components/eventAdd";
+
 interface Event {
   events: {
     id: string;
@@ -19,19 +21,22 @@ interface Event {
 function Home(events: Event) {
   return (
     <>
-    <body>
-    
-      <Head>
-        <title>Főoldal</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <div>
+        <Head>
+          <title>Rendezvény létrehozása</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <Navbar />
         {
-          events.events.map(x=><EventCard id={x.id} name={x.name}/>)
+          events.events.map(x => <EventCard id={x.id} name={x.name} />)
         }
-        <DarkMode/>
-        <p>lol</p>
-        </body>
+        <DarkMode />
+        <div>
+          {
+            <EventAdd />
+          }
+        </div>
+      </div>
     </>
   );
 }

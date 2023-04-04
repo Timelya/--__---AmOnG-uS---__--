@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 #regisztrációsCímSzöveg {
     font-family: 'arial';
     font-weight: bold;
@@ -10,34 +9,36 @@
     text-align: center;
     box-shadow: 10px 10px 20px 0 #ff1493, -10px -10px 20px 0 #00f, 10px 10px 50px 0 rgb(144, 95, 159);
     background: linear-gradient(-60deg, #D60270 50%, #0038A8 50%);
-    
-    
 }
+
 .labelFeliratok {
     font-size: 25px;
     letter-spacing: 0.1em;
     font-weight: 600;
     color: #000627;
 }
-#gomb{
-width: 243px;
-height: 72.62px;
-left: 204px;
-top: 511.68px;
 
-filter: drop-shadow(15.7706px -13.6678px 112.497px rgba(248, 0, 59, 0.3)) drop-shadow(-14.7192px 17.3476px 84.1097px rgba(0, 56, 255, 0.3));
+#gomb {
+    width: 243px;
+    height: 72.62px;
+    left: 204px;
+    top: 511.68px;
+    filter: drop-shadow(15.7706px -13.6678px 112.497px rgba(248, 0, 59, 0.3)) drop-shadow(-14.7192px 17.3476px 84.1097px rgba(0, 56, 255, 0.3));
 }
-.label{
+
+.label {
     border-bottom: 2px solid rgba(23, 0, 53, 0.6);
     width: 450px;
     height: 70px;
     background-color: transparent;
 }
+
 body {
     /* a háttér sötítésére szolgál */
-    background: #333333;
+    background: #333;
 }
+
 .center {
     margin: auto;
     text-align: center;
-  }
+}
