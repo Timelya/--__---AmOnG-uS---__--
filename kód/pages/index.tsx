@@ -31,11 +31,7 @@ function Home(events: Event) {
           events.events.map(x => <EventCard id={x.id} name={x.name} />)
         }
         <DarkMode />
-        <div>
-          {
-            <EventAdd />
-          }
-        </div>
+        <EventAdd />
       </div>
     </>
   );
