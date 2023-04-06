@@ -4,7 +4,6 @@ import { Component, useState } from "react";
 import { prisma } from "../lib/prisma";
 import { useRouter } from "next/router";
 import { sha256 } from "js-sha256";
-import { getUsers } from "./Components/UNUSEDgetServerSideProps";
 import { GetServerSideProps } from "next";
 import moment from "moment";
 

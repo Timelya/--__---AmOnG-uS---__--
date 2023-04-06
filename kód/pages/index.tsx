@@ -5,7 +5,6 @@ import { prisma } from "../lib/prisma";
 import { useRouter } from "next/router";
 import Navbar from "./Components/Navbar";
 import EventCard from "./Components/EventCard";
-import { getUsers } from "./Components/UNUSEDgetServerSideProps";
 import { GetServerSideProps } from "next";
 import DarkMode from "./Components/DarkMode";
 import EventAdd from "./Components/eventAdd";

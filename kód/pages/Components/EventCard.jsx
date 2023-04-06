@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { getUsers } from "./UNUSEDgetServerSideProps";
 function EventCard(props) {
 	return (
 		<div className="inline-block w-48 m-4 h-60 rounded-xl bg-slate-900" id={props.id}>

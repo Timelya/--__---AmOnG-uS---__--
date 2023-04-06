@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useState } from 'react'
 import { prisma } from '../lib/prisma'
-import { getUsers } from "./Components/UNUSEDgetServerSideProps";
 import { useRouter } from 'next/router'
 import { GetServerSideProps } from 'next';
 
