@@ -71,7 +71,7 @@ export default function Header() {
                         </>
                     )}
                     <li>
-                        <a href="https://github.com/vvo/iron-session">
+                        <a href="retek.hu">
                             <Image
                                 src="/GitHub-Mark-Light-32px.png"
                                 width="32"

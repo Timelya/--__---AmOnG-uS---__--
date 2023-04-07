@@ -1,18 +1,23 @@
 import { withSessionRoute } from "lib/config/withSession.js";
 
-const VALID_EMAIL = "asd";
-const VALID_PASSWORD = "asd";
-
 export default withSessionRoute(createSessionRoute);
 
 async function createSessionRoute(req, res) {
+
+    const users = await prisma?.user.findMany({
+		select: {
+			id: true,
+			name: true,
+			password: true,
+			email: true,
+		},
+	});
     if (req.method === "POST") {
         const { email, password } = req.body;
 
-        if (email === VALID_EMAIL && password === VALID_PASSWORD) {
+        if (users.find((user) => user.email == email && user.password == password)) {
             req.session.user = {
-                username: "test@gmail.com",
-                isAdmin: true
+                username: email,
             };
             await req.session.save();
             res.send({ ok: true });

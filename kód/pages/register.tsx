@@ -103,12 +103,7 @@ const Register: NextPage<User> = ({ users }) => {
 					x.email == data.email && x.password == sha256(data.password)
 			);
 			if (user) {
-				console.log(
-					JSON.stringify({
-						email: user.email,
-						password: user.password,
-					})
-				);
+				
 				const session = await fetch("/api/login", {
 					method: "POST",
 					headers: {
@@ -119,7 +114,7 @@ const Register: NextPage<User> = ({ users }) => {
 						password: user.password,
 					}),
 				});
-				const { user: sessionUser } = await session.json();
+				router.push("/profile-ssr")
 			}
 		}
 	}
@@ -364,7 +359,7 @@ const Register: NextPage<User> = ({ users }) => {
 };
 
 export const getServerSideProps = withSessionSsr(async (req: any, res: any) => {
-	if (req||req.session != null) return {
+	if (req.session != null) return {
 		redirect: {
 			destination: "/",
 			permanent: false,
@@ -380,7 +375,6 @@ export const getServerSideProps = withSessionSsr(async (req: any, res: any) => {
 	});
 
 
-	console.log(users);
 	return {
 		props: {users },
 	};

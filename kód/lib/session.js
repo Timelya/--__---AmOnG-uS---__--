@@ -1,18 +1,23 @@
-import { withSessionRoute } from "pages/lib/config/withSession";
-
-const VALID_EMAIL = "test@gmail.com";
-const VALID_PASSWORD = "password";
+import { withSessionRoute } from "lib/config/withSession.js";
 
 export default withSessionRoute(createSessionRoute);
 
 async function createSessionRoute(req, res) {
+
+    const users = await prisma?.user.findMany({
+		select: {
+			id: true,
+			name: true,
+			password: true,
+			email: true,
+		},
+	});
     if (req.method === "POST") {
         const { email, password } = req.body;
 
-        if (email === VALID_EMAIL && password === VALID_PASSWORD) {
+        if (users.find((user) => user.email == email && user.password == password)) {
             req.session.user = {
-                username: "test@gmail.com",
-                isAdmin: true
+                username: email,
             };
             await req.session.save();
             res.send({ ok: true });
@@ -21,3 +26,11 @@ async function createSessionRoute(req, res) {
     }
     return res.status(404).send("");
 }
+
+export const sessionOptions = {
+    password: process.env.SECRET_COOKIE_PASSWORD,
+    cookieName: "iron-session/examples/next.js",
+    cookieOptions: {
+      secure: process.env.NODE_ENV === "production",
+    },
+  };
