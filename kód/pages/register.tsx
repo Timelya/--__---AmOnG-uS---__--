@@ -39,7 +39,7 @@ const Register: NextPage<User> = ({ users }) => {
 	const refreshData = () => {
 		router.replace(router.asPath);
 	};
-
+	
 	function handleRegister(data: FormData) {
 		if (!data.name) {
 			alert("Felhasználó név nem lehet üres");
@@ -120,10 +120,6 @@ const Register: NextPage<User> = ({ users }) => {
 					}),
 				});
 				const { user: sessionUser } = await session.json();
-				console.log(user);
-				if (user) {
-					router.push("/protected");
-				}
 			}
 		}
 	}
@@ -367,8 +363,13 @@ const Register: NextPage<User> = ({ users }) => {
 	);
 };
 
-
-export const getServerSideProps = withSessionSsr(async (req: any, res: any): Promise<{ props: { user: { password: string; email: string; id: number; name: string; } | undefined; users: { password: string; email: string; id: number; name: string; }[]; }; }> => {
+export const getServerSideProps = withSessionSsr(async (req: any, res: any) => {
+	if (req||req.session != null) return {
+		redirect: {
+			destination: "/",
+			permanent: false,
+		},
+	};
 	const users = await prisma?.user.findMany({
 		select: {
 			id: true,
@@ -377,13 +378,11 @@ export const getServerSideProps = withSessionSsr(async (req: any, res: any): Pro
 			email: true,
 		},
 	});
-	let user= null;
-	if(req.session != null)
-		user = users?.find((user) => user.id === req.session.get("user"));
-	console.log(user);
+
+
 	console.log(users);
 	return {
-		props: { user, users },
+		props: {users },
 	};
 });
 
