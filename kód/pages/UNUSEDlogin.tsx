@@ -22,7 +22,7 @@ interface User {
   }[];
 }
 
-const Login: NextPage<User> = ({ users }) => {
+const UNUSEDlogin: NextPage<User> = ({ users }) => {
   const [form, setForm] = useState<FormData>({
     name: "",
     password: "",
@@ -111,4 +111,4 @@ export const getServerSideProps: GetServerSideProps = async () => {
 }
 
 
-export default Login;
+export default UNUSEDlogin;
