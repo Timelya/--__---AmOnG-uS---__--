@@ -1,7 +1,7 @@
-import { withSessionRoute } from "pages/lib/config/withSession";
+import { withSessionRoute } from "lib/config/withSession.js";
 
-const VALID_EMAIL = "test@gmail.com";
-const VALID_PASSWORD = "password";
+const VALID_EMAIL = "asd";
+const VALID_PASSWORD = "asd";
 
 export default withSessionRoute(createSessionRoute);
 

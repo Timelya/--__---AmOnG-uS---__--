@@ -1,23 +1,23 @@
 // noinspection JSFileReferences
-
-import { Octokit } from "octokit";
 import { withIronSessionApiRoute } from "iron-session/next";
-import { sessionOptions } from "lib\session.js";
-const octokit = new Octokit();
 
-export default withIronSessionApiRoute(async (req, res) => {
-    const { username } = await req.body;
-
-    try {
-        const {
-            data: { login, avatar_url },
-        } = await octokit.rest.users.getByUsername({ username });
-
-        const user = { isLoggedIn: true, login, avatarUrl: avatar_url };
-        req.session.user = user;
-        await req.session.save();
-        res.json(user);
-    } catch (error) {
-        res.status(500).json({ message: error.message });
-    }
-}, sessionOptions);
+export default withIronSessionApiRoute(
+	async function loginRoute(req, res) {
+		req.session.user = await prisma?.user.findFirst({
+			where: {
+				email: req.body.email,
+				password: req.body.password,
+			},
+		});
+		await req.session.save();
+		res.send({ ok: true });
+	},
+	{
+		cookieName: "myapp_cookiename",
+		password: "complex_password_at_least_32_characters_long",
+		// secure: true should be used in production (HTTPS) but can't be used in development (HTTP)
+		cookieOptions: {
+			secure: process.env.NODE_ENV === "production",
+		},
+	}
+);

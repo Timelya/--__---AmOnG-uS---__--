@@ -1,4 +1,4 @@
-export function getErrorMessage(error) {
+export function getErrorMessage(error: any) {
   if (error.graphQLErrors) {
     for (const graphQLError of error.graphQLErrors) {
       if (

@@ -6,7 +6,7 @@ export default function Form({ errorMessage, onSubmit }) {
                 <input type="text" name="username" required />
             </label>
 
-            <button type="submit">Login</button>
+            <button type="submit" className="text-white">Login</button>
 
             {errorMessage && <p className="error">{errorMessage}</p>}
 
