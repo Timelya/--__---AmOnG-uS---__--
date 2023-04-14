@@ -1,14 +1,10 @@
-import type { NextApiHandler, NextPage } from "next";
+import type { NextPage } from "next";
 import Head from "next/head";
-import { Component, useState } from "react";
+import { useState } from "react";
 import { prisma } from "../lib/prisma";
 import { useRouter } from "next/router";
 import { sha256 } from "js-sha256";
-import { GetServerSideProps } from "next";
-import withIronSessionApiRoute from "./api/login.js";
-import login from "./api/login.js";
 import { withSessionSsr } from "../lib/config/withSession";
-import { NextApiRequest, NextApiResponse } from "next";
 
 interface FormData {
 	name: string;
@@ -24,9 +20,21 @@ interface User {
 		password: string;
 		email: string;
 	}[];
+	session: {
+		user: {
+			id: string;
+			name: string;
+			email: string;
+		};
+	};
+	
 }
 
-const Register: NextPage<User> = ({ users }) => {
+
+
+
+
+const Register: NextPage<User> = ({ users, session }) => {
 	const [form, setForm] = useState<FormData>({
 		name: "",
 		password: "",
@@ -102,7 +110,11 @@ const Register: NextPage<User> = ({ users }) => {
 					x.email == data.email && x.password == sha256(data.password)
 			);
 			if (user) {
-				console.log({ "Content-Type": "application/json" } + " "+JSON.stringify({ data }),)
+				console.log(
+					{ "Content-Type": "application/json" } +
+						" " +
+						JSON.stringify({ data })
+				);
 				const response = await fetch("/api/sessions", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
@@ -111,7 +123,6 @@ const Register: NextPage<User> = ({ users }) => {
 				if (response.ok) {
 					console.log(response);
 					return alert("Sikeres bejelentkezés");
-					
 				}
 			}
 		}
@@ -356,11 +367,13 @@ const Register: NextPage<User> = ({ users }) => {
 	);
 };
 
-export const getServerSideProps = withSessionSsr(async (req: any, res: any) => {
-	if (req.session != null)
+export const getServerSideProps = withSessionSsr(async ({req, res}) => {
+	const session = req.session;
+
+	if (session.user != undefined)
 		return {
 			redirect: {
-				destination: "/",
+				destination: "/protected",
 				permanent: false,
 			},
 		};
@@ -374,7 +387,7 @@ export const getServerSideProps = withSessionSsr(async (req: any, res: any) => {
 	});
 
 	return {
-		props: { users },
+		props: { users, session},
 	};
 });
 
