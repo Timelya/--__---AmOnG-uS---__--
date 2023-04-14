@@ -22,8 +22,6 @@ interface User {
 const PrivatePage: NextPage<User> = ({session}) => {
 
 	const router = useRouter();
-	console.log(session);
-	console.log(session.user.username);
 	return (
 		<>
 			<div>
@@ -32,6 +30,7 @@ const PrivatePage: NextPage<User> = ({session}) => {
 
 				<p> {JSON.stringify(session)}</p>
 				<button
+				name="logout-btn"
 					onClick={async function () {
 						await fetch("/api/logout", {
 							method: "POST",

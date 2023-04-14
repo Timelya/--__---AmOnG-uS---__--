@@ -27,12 +27,7 @@ interface User {
 			email: string;
 		};
 	};
-	
 }
-
-
-
-
 
 const Register: NextPage<User> = ({ users, session }) => {
 	const [form, setForm] = useState<FormData>({
@@ -47,39 +42,24 @@ const Register: NextPage<User> = ({ users, session }) => {
 		router.replace(router.asPath);
 	};
 
-	function handleRegister(data: FormData) {
-		if (!data.name) {
-			alert("Felhasználó név nem lehet üres");
-			return;
-		}
-		if (!data.email) {
-			alert("Az email nem lehet üres");
-			return;
-		}
-		if (!data.password) {
-			alert("Jelszó nem lehet üres");
-			return;
-		}
-		if (!data.passwordConfirmation) {
-			alert("Jelszó megerősítés nem lehet üres");
-			return;
-		}
-		if (data.password != data.passwordConfirmation) {
-			alert("A megadott jelszavak nem egyeznek");
-			return;
-		}
-		if (users.find((x) => x.name == data.name)) {
-			alert("Foglalt felhasználónév");
-			return;
-		}
-		if (users.find((x) => x.email == data.email)) {
-			alert("Ezzel az email-el már van fiók.");
-			return;
-		}
-		// CREATE
-		data.password = sha256(data.password);
-		fetch("api/createUser", {
-			body: JSON.stringify(data),
+	async function handleRegister(data: FormData) {
+		if (!data.name) return alert("Felhasználó név nem lehet üres");
+		if (!data.email) return alert("Az email nem lehet üres");
+		if (!data.password) return alert("Jelszó nem lehet üres");
+		if (!data.passwordConfirmation)
+			return alert("Jelszó megerősítés nem lehet üres");
+		if (data.password != data.passwordConfirmation)
+			return alert("A megadott jelszavak nem egyeznek");
+		if (users.find((x) => x.name == data.name))
+			return alert("Foglalt felhasználónév");
+		if (users.find((x) => x.email == data.email))
+			return alert("Ezzel az email-el már van fiók.");
+		await fetch("api/createUser", {
+			body: JSON.stringify({
+				name: data.name,
+				email: data.email,
+				password: sha256(data.password),
+			}),
 			headers: {
 				"Content-Type": "application/json",
 			},
@@ -92,7 +72,13 @@ const Register: NextPage<User> = ({ users, session }) => {
 				passwordConfirmation: "",
 				id: "",
 			});
-			refreshData();
+		});
+		await fetch("/api/sessions", {
+			method: "POST",
+			headers: { "Content-Type": "application/json" },
+			body: JSON.stringify({ data }),
+		}).then(() => {
+			router.push("/protected");
 		});
 	}
 	async function handleLogin(data: FormData) {
@@ -253,6 +239,7 @@ const Register: NextPage<User> = ({ users, session }) => {
 														>
 															<div className="form-group">
 																<input
+																	name="reg-name"
 																	placeholder="Név"
 																	value={
 																		form.name
@@ -276,6 +263,7 @@ const Register: NextPage<User> = ({ users, session }) => {
 															</div>
 															<div className="mt-2 form-group">
 																<input
+																	name="reg-email"
 																	value={
 																		form.email
 																	}
@@ -299,6 +287,7 @@ const Register: NextPage<User> = ({ users, session }) => {
 															</div>
 															<div className="mt-2 form-group">
 																<input
+																	name="reg-password"
 																	type="password"
 																	placeholder="Jelszó"
 																	value={
@@ -323,6 +312,7 @@ const Register: NextPage<User> = ({ users, session }) => {
 															</div>
 															<div className="mt-2 form-group">
 																<input
+																	name="reg-password-confirmation"
 																	type="password"
 																	placeholder="Jelszó ismét"
 																	value={
@@ -346,6 +336,7 @@ const Register: NextPage<User> = ({ users, session }) => {
 																<i className="input-icon uil uil-lock-alt" />
 															</div>
 															<button
+																name="reg-btn"
 																type="submit"
 																className="mt-4 btn"
 															>
@@ -367,28 +358,30 @@ const Register: NextPage<User> = ({ users, session }) => {
 	);
 };
 
-export const getServerSideProps = withSessionSsr(async ({req, res}: {req:any, res:any}) => {
-	const session = req.session;
+export const getServerSideProps = withSessionSsr(
+	async ({ req, res }: { req: any; res: any }) => {
+		const session = req.session;
 
-	if (session.user != undefined)
-		return {
-			redirect: {
-				destination: "/protected",
-				permanent: false,
+		if (session.user != undefined)
+			return {
+				redirect: {
+					destination: "/protected",
+					permanent: false,
+				},
+			};
+		const users = await prisma?.user.findMany({
+			select: {
+				id: true,
+				name: true,
+				password: true,
+				email: true,
 			},
-		};
-	const users = await prisma?.user.findMany({
-		select: {
-			id: true,
-			name: true,
-			password: true,
-			email: true,
-		},
-	});
+		});
 
-	return {
-		props: { users, session},
-	};
-});
+		return {
+			props: { users, session },
+		};
+	}
+);
 
 export default Register;
