@@ -1,5 +1,7 @@
 describe('template spec', () => {
-  it('passes', () => {
+  it('Visits the homepage of the website', () => {
     cy.visit('localhost:3000')
+    cy.contains('Eventcard')
   })
+
 })
