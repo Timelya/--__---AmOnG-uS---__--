@@ -367,7 +367,7 @@ const Register: NextPage<User> = ({ users, session }) => {
 	);
 };
 
-export const getServerSideProps = withSessionSsr(async ({req, res}) => {
+export const getServerSideProps = withSessionSsr(async ({req, res}: {req:any, res:any}) => {
 	const session = req.session;
 
 	if (session.user != undefined)

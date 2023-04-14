@@ -53,7 +53,7 @@ const PrivatePage: NextPage<User> = ({session}) => {
 }
 async function logout() {}
 
-export const getServerSideProps = withSessionSsr(async ({ req, res }): Promise<{ notFound: boolean; props?: undefined; } | { props: { session: any; }; notFound?: undefined; }> => {
+export const getServerSideProps = withSessionSsr(async ({ req, res }: {req:any, res:any}): Promise<{ notFound: boolean; props?: undefined; } | { props: { session: any; }; notFound?: undefined; }> => {
 	const session = req.session;
 	if (!session.user) {
 		return {

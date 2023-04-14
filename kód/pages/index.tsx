@@ -27,7 +27,7 @@ function Home(events: Event) {
         </Head>
         <Navbar />
         {
-          events.events.map(x => <EventCard id={x.id} name={x.name} />)
+          events.events.map(x => <EventCard key={x.id} name={x.name} />)
         }
         <DarkMode />
         <EventAdd />
@@ -36,7 +36,6 @@ function Home(events: Event) {
   );
 }
 export const getServerSideProps: GetServerSideProps = async () => {
-  // READ all notes from DB
   let events = await prisma?.event.findMany({
     select: {
       id: true,
