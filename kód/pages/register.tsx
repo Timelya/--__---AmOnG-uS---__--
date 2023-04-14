@@ -5,7 +5,6 @@ import { prisma } from "../lib/prisma";
 import { useRouter } from "next/router";
 import { sha256 } from "js-sha256";
 import { GetServerSideProps } from "next";
-import { sessionOptions, withSession } from "../lib/UNUSEDsession";
 import withIronSessionApiRoute from "./api/login.js";
 import login from "./api/login.js";
 import { withSessionSsr } from "../lib/config/withSession";
@@ -39,7 +38,7 @@ const Register: NextPage<User> = ({ users }) => {
 	const refreshData = () => {
 		router.replace(router.asPath);
 	};
-	
+
 	function handleRegister(data: FormData) {
 		if (!data.name) {
 			alert("Felhasználó név nem lehet üres");
@@ -103,18 +102,14 @@ const Register: NextPage<User> = ({ users }) => {
 					x.email == data.email && x.password == sha256(data.password)
 			);
 			if (user) {
-				
-				const session = await fetch("/api/login", {
+				const response = await fetch("/api/sessions", {
 					method: "POST",
-					headers: {
-						"Content-Type": "application/json",
-					},
-					body: JSON.stringify({
-						email: user.email,
-						password: user.password,
-					}),
+					headers: { "Content-Type": "application/json" },
+					body: JSON.stringify({ data }),
 				});
-				router.push("/profile-ssr")
+				if (response.ok) {
+					return router.push("/LOPOTTprofile-ssr");
+				}
 			}
 		}
 	}
@@ -359,12 +354,13 @@ const Register: NextPage<User> = ({ users }) => {
 };
 
 export const getServerSideProps = withSessionSsr(async (req: any, res: any) => {
-	if (req.session != null) return {
-		redirect: {
-			destination: "/",
-			permanent: false,
-		},
-	};
+	if (req.session != null)
+		return {
+			redirect: {
+				destination: "/",
+				permanent: false,
+			},
+		};
 	const users = await prisma?.user.findMany({
 		select: {
 			id: true,
@@ -374,9 +370,8 @@ export const getServerSideProps = withSessionSsr(async (req: any, res: any) => {
 		},
 	});
 
-
 	return {
-		props: {users },
+		props: { users },
 	};
 });
 

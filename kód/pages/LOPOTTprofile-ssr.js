@@ -4,6 +4,7 @@ import { withIronSessionSsr } from "iron-session/next";
 import { sessionOptions } from "lib/session";
 
 export default function SsrProfile({ user }) {
+
   return (
     <Layout>
       <h1>Your GitHub profile</h1>
@@ -18,7 +19,7 @@ export default function SsrProfile({ user }) {
         </a>
       </h2>
 
-      {user?.isLoggedIn && (
+      {user && (
         <>
           <p style={{ fontStyle: "italic" }}>
             Public data, from{" "}
@@ -39,16 +40,11 @@ export const getServerSideProps = withIronSessionSsr(async function ({
   res,
 }) {
   const user = req.session.user;
-
   if (user === undefined) {
-    res.setHeader("location", "/login");
+    res.setHeader("location", "/register");
     res.statusCode = 302;
     res.end();
-    return {
-      props: {
-        user: { isLoggedIn: false, login: "", avatarUrl: "" },
-      },
-    };
+    return { props: {} };
   }
 
   return {
