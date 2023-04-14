@@ -4,6 +4,7 @@ import { withIronSessionSsr } from "iron-session/next";
 import { sessionOptions } from "lib/session";
 
 export default function SsrProfile({ user }) {
+  console.log(user)
 
   return (
     <Layout>

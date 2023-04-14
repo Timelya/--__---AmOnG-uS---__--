@@ -102,13 +102,16 @@ const Register: NextPage<User> = ({ users }) => {
 					x.email == data.email && x.password == sha256(data.password)
 			);
 			if (user) {
+				console.log({ "Content-Type": "application/json" } + " "+JSON.stringify({ data }),)
 				const response = await fetch("/api/sessions", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
 					body: JSON.stringify({ data }),
 				});
 				if (response.ok) {
-					return router.push("/LOPOTTprofile-ssr");
+					console.log(response);
+					return alert("Sikeres bejelentkezés");
+					
 				}
 			}
 		}
