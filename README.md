@@ -9,6 +9,14 @@ npm install --save-dev @types/react @types/react-dom
 
 npx prisma generate
 npm run dev
+
+ERESOLVE hiba esetén:
+-frissits npm-t:
+        npm install -g npm
+- ha nem oldotta meg akkor töröld az npm gyűrűt:
+        npm cache clean --force
+-node.js?
+
 ____________________________
 CSS cuccok:
 npm install -D tailwindcss

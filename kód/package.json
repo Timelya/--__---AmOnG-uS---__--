@@ -22,8 +22,10 @@
     "octokit": "^2.0.14",
     "react": "^18.2.0",
     "react-body": "^0.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "18.2.0",
     "react-table": "^7.8.0",
+    "rsuite": "^5.31.1",
     "styled-components": "^5.3.9",
     "swr": "^2.1.2",
     "uuid": "^9.0.0"
