@@ -13,11 +13,19 @@ model user {
   password String
   created  DateTime @default(now())
   email    String
+  admin   Boolean  @default(false)
 }
 
 model event {
   id    Int     @id @default(autoincrement())
   name  String  @db.VarChar(255)
+  description String? @db.VarChar(255)
   start String? @db.VarChar(255)
   end   String? @db.VarChar(255)
+}
+
+model ticket {
+  id       Int @id @default(autoincrement())
+  user_id  Int @db.Int
+  event_id Int @db.Int
 }
