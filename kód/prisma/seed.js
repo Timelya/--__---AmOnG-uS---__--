@@ -1,4 +1,3 @@
-
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 //declare sha256
@@ -42,6 +41,18 @@ async function main() {
 		},
 	});
 	//seeds the ticket table
+	await prisma.ticket.create({
+		data: {
+			user_id: 1,
+			event_id: 1,
+		},
+	});
+	await prisma.ticket.create({
+		data: {
+			user_id: 2,
+			event_id: 2,
+		},
+	});
 }
 main()
 	.then(async () => {

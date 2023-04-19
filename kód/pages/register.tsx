@@ -107,8 +107,8 @@ const Register: NextPage<User> = ({ users, session }) => {
 					body: JSON.stringify({ data }),
 				});
 				if (response.ok) {
-					console.log(response);
-					return alert("Sikeres bejelentkezés");
+					return router.push("/protected");
+
 				}
 			}
 		}
