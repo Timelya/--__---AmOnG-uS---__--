@@ -15,10 +15,11 @@ function DarkMode() {
       if (isDarkMode) {
       body.style.marginLeft = '100px';
         body.style.backgroundColor = '#fff';
-        body.style.color = '#191918';
+        body.style.color = '#313123';
+        
      } else {
       body.style.backgroundColor = '#333';
-      body.style.color = '#f2f2ac';
+      body.style.color = '#efefaa';
       body.style.marginLeft = '100px';
        }
       }

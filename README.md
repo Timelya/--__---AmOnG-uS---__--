@@ -1,6 +1,5 @@
-# -
-SuS
-
+-----------------
+## Erősen ajánlott parancsok:
 npm install @prisma/client
 npx prisma db push
 npx prisma generate
@@ -10,15 +9,17 @@ npm install --save-dev @types/react @types/react-dom
 npx prisma generate
 npm run dev
 
-ERESOLVE hiba esetén:
--frissits npm-t:
-        npm install -g npm
-- ha nem oldotta meg akkor töröld az npm gyűrűt:
-        npm cache clean --force
--node.js?
+-----------------
+## Szentírás ENOENT hibára:
+npm uninstall -g npm
+npm cache clean --force
+rm -rf node_modules
+rm package-lock.json
+npm install
+>>>>>>> Stashed changes
 
 ____________________________
-CSS cuccok:
+## CSS cuccok:
 npm install -D tailwindcss
 npm install react-body --save
 npx tailwindcss init

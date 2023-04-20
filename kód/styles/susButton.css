@@ -1,17 +1,17 @@
-button {
+.Susbutton {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     padding: 0 10px;
-    color: white;
-    text-shadow: 2px 2px rgb(116, 116, 116);
+    color: #0f0f0f;
+    text-shadow: 2px 2px #93887e;
     text-transform: uppercase;
     border: solid 2px black;
     letter-spacing: 1px;
     font-weight: 600;
     font-size: 17px;
-    background-color: hsl(49deg 98% 60%);
+    background-color: #70494a;
     border-radius: 50px;
     position: relative;
     overflow: hidden;
