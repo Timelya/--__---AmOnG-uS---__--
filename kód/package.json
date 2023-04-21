@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ionic/react": "^7.0.3",
     "@material-tailwind/react": "^1.4.2",
     "@prisma/client": "^4.12.0",
     "@trendmicro/react-sidenav": "^0.5.0",
@@ -16,14 +17,20 @@
     "flowbite-react": "^0.4.2",
     "iron-session": "^6.3.1",
     "js-sha256": "^0.9.0",
+    "mdb-react-ui-kit": "^6.0.0",
     "moment": "^2.29.4",
     "next": "13.2.4",
     "next-iron-session": "^4.2.0",
     "octokit": "^2.0.14",
     "react": "^18.2.0",
     "react-body": "^0.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "18.2.0",
+    "react-moving-text": "^0.0.7",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.10.0",
     "react-table": "^7.8.0",
+    "rsuite": "^5.31.1",
     "styled-components": "^5.3.9",
     "swr": "^2.1.2",
     "uuid": "^9.0.0"

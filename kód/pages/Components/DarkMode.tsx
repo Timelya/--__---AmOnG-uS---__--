@@ -14,21 +14,27 @@ function DarkMode() {
     if (body?.style) {
       if (isDarkMode) {
       body.style.marginLeft = '100px';
-        body.style.backgroundColor = '#fff';
-        body.style.color = '#191918';
+        body.style.backgroundColor = '#ffffe0';
+        body.style.color = '#313123';
+        
      } else {
       body.style.backgroundColor = '#333';
-      body.style.color = '#f2f2ac';
+      body.style.color = '#efefaa';
       body.style.marginLeft = '100px';
        }
       }
   }, [isDarkMode]);
 
   return (
-    <div>
-      <input type="checkbox" id="hatterkapcsolo" onChange={handleHatterValtozas} />
-      <label htmlFor="hatterkapcsolo">Szinnn!!</label>
-    </div>
+
+      <label className="container">
+
+      <input id="check" type="checkbox" onChange={handleHatterValtozas}></input>
+      <span></span>
+  
+      <label htmlFor="check" className="shadow"></label>
+  </label>
+
   );
 }
 
