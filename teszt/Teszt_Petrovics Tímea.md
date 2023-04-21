@@ -26,10 +26,14 @@ Ebben a dokumentumban lesz felsorolva az elvégzett tesztek elvárásai és ered
 
 | Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
 | :---: | --- | --- | --- | --- |
-| ... | 2022.xx.xx. | ... | ... | ... |
+| Funkció - Új esemény létrehozása | 2022.xx.xx. | Képes új esemény létrehozására | sikeres | - |
+| Funkció - Új esemény létrehozása  | 2022.xx.xx. | Eltárolja a név, idő mezőket helyes formátumban | sikeres | - |
+| Funkció - Új esemény létrehozása | 2022.xx.xx. | Eltárolja további információkat az eseményről | sikertelen | a funkciókat fontosság szerint hozzuk létre és első sorban a működő képes program a célunk a részletesség csak másodlagos |
+| Frontend | 2022.xx.xx. | Láthatóan jelenik meg az oldal | sikeres | - |
+| Frontend | 2022.xx.xx. | Az oldal telefonos nézetben is megtakinthető | sikertelen | A regisztráció és bejelntkezés működik telefonos nézetben is ám a főoldaln még vannak hibás nézetek. |
 
-Az Alfa tesztelés során a vizsgált elemek mind hibátlanul működtek mindenféle fennakadások nélkül.
-Az Alfa tesztelés során a vizsgált elemek között volt ami nem megfelelően működött, ez a későbbiek során javításra szorul.
+Esemény létrehozása:
+ ami nem megfelelően működött, ez a későbbiek során javításra szorul.
 
 Következő tesztelésnél a többi funkció kerül vizsgálatra illetve elemzésre.
 
