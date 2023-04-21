@@ -44,7 +44,7 @@ function Navbar() {
                         </NavText>
                     </NavItem>
 
-                    <NavItem eventKey="Rendezvény lista">
+                    <NavItem eventKey="Rendezvény lista" onClick={() => router.push('/eventList')}>
                         <NavIcon><Icon icon="material-symbols:featured-play-list-outline" className="pl-2 text-4xl ..." /></NavIcon>
                         <NavText>
                             Rendezvény lista

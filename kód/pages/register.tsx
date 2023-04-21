@@ -108,11 +108,14 @@ const Register: NextPage<User> = ({ users, session }) => {
 				});
 				if (response.ok) {
 					console.log(response);
-					return alert("Sikeres bejelentkezés");
+					window.location.href = "/";
+					//return alert("Sikeres bejelentkezés");
 				}
 			}
 		}
 	}
+
+
 
 	return (
 		<>
@@ -133,7 +136,7 @@ const Register: NextPage<User> = ({ users, session }) => {
 					href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
 				/>
 			</Head>
-			<div className="bg-stone-700 text-amber-200...">
+			<div className="text-amber-200">
 				<div className="section">
 					<div className="container">
 						<div className="row full-height justify-content-center">

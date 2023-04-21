@@ -4,6 +4,7 @@ import '../styles/styles.css'
 import '../styles/hamster.css'
 import '../styles/susButton.css'
 import '../styles/eventAddLabal.css'
+import '../styles/udv.css'
 //java
 import '../java/nav.js'
 import type { AppProps } from 'next/app'
