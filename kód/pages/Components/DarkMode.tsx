@@ -26,10 +26,15 @@ function DarkMode() {
   }, [isDarkMode]);
 
   return (
-    <div>
-      <input type="checkbox" id="hatterkapcsolo" onChange={handleHatterValtozas} />
-      <label htmlFor="hatterkapcsolo">Szinnn!!</label>
-    </div>
+
+      <label className="container">
+
+      <input id="check" type="checkbox" onChange={handleHatterValtozas}></input>
+      <span></span>
+  
+      <label htmlFor="check" className="shadow"></label>
+  </label>
+
   );
 }
 
