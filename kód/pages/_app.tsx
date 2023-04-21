@@ -3,6 +3,7 @@ import '../styles/globals.css'
 import '../styles/styles.css'
 import '../styles/hamster.css'
 import '../styles/susButton.css'
+import '../styles/eventAddLabal.css'
 //java
 import '../java/nav.js'
 import type { AppProps } from 'next/app'

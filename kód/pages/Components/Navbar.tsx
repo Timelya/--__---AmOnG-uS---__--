@@ -14,6 +14,14 @@ function Navbar() {
             <SideNav>
                 <SideNav.Toggle />
                 <SideNav.Nav defaultSelected="home">
+
+                <NavItem eventKey="Főoldal" onClick={() => router.push('/')}>
+                        <NavIcon><Icon icon="material-symbols:home-outline" className="pl-2 text-4xl ..." /></NavIcon>
+                        <NavText>
+                                Főoldal
+                        </NavText>
+                    </NavItem>
+
                     <NavItem eventKey="Rendezvény létrehozás" onClick={() => router.push('/newevent')}>
                         <NavIcon>
                             <Icon icon="material-symbols:event-upcoming" className="pl-2 text-4xl ..." />
@@ -22,8 +30,6 @@ function Navbar() {
                             Rendezvény létrehozás
                         </NavText>
                     </NavItem>
-
-
                     <NavItem eventKey="Profil szerkesztés">
                         <NavIcon><Icon icon="material-symbols:edit-square-outline" className="pl-2 text-4xl ..." /></NavIcon>
                         <NavText>
@@ -45,10 +51,18 @@ function Navbar() {
                         </NavText>
                     </NavItem>
 
-                    <NavItem eventKey="Kijelentkezés">
+
+                    <NavItem eventKey="Kijelentkezés" onClick={() => router.push('/newevent')}>
                         <NavIcon><Icon icon="fluent-mdl2:leave-user" className="pl-2 text-4xl ..." /></NavIcon>
                         <NavText>
-                            Kijelentkezés
+                            <button name="logout-btn" onClick={async function () { 
+                                await fetch("/api/logout", {method: "POST",headers: {
+								"Content-Type": "application/json",},});
+						router.push("/register");
+					}}
+				>
+					Kijelentkezés
+				</button>
                         </NavText>
                     </NavItem>
 

@@ -8,6 +8,7 @@ import { GetServerSideProps } from "next";
 import moment from "moment";
 import Navbar from "./Components/Navbar";
 import DarkMode from "./Components/DarkMode";
+import { IonDatetime } from '@ionic/react';
 
 
 interface FormData {
@@ -105,7 +106,7 @@ const MakeEvent: NextPage<Event> = ({ events }) => {
 						<h1 id="regText" className="m-4 text-2xl font-bold text-center">
 							Rendezvény létrehozása
 						</h1>
-						<br></br>
+						<p style={{ fontSize: 1 }}><br></br></p>
 
 						<form
 							className="w-auto min-w-[25%] max-w-min mx-auto space-y-6 flex flex-col items-stretch"
@@ -116,28 +117,36 @@ const MakeEvent: NextPage<Event> = ({ events }) => {
 						>
 
 							<div style={{ color: "#9ca3af" }}>
+								<div className="form">
 											<input
 											type="text"
 											placeholder="Esemény neve"
 											value={form.name}
 											onChange={(e) => setForm({ ...form, name: e.target.value })}
-											className="p-1 border-2 border-gray-600 rounded"/>
+											className="input"/>
+											 <span className="input-border"></span>
+											</div>
+								<div className="form">
 										<input
 												type="datetime-local"
 												placeholder="Esemény kezdete"
 												value={form.startString}
 												onChange={(e) =>
 													setForm({ ...form, startString: e.target.value })}
-												className="p-1 border-2 border-gray-600 rounded  ..."/>
+												className="input"/>
+												<span className="input-border"></span>
+												</div>
 											<p style={{ fontSize: 1 }}><br></br></p>
+											<div className="form">
 											<input
-												className="p-1 border-2 border-gray-600 rounded  ..."
+												className="input"
 												type="datetime-local"
 												value={form.endString}
 												placeholder="Esemény vége"
 												onChange={(e) =>
 													setForm({ ...form, endString: e.target.value })
 												} />
+												<span className="input-border"></span></div>
 							</div>
 							<button type="submit" className="Susbutton">
 								<svg height="36px" width="36px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">

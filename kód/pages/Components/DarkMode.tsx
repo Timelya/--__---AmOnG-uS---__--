@@ -14,7 +14,7 @@ function DarkMode() {
     if (body?.style) {
       if (isDarkMode) {
       body.style.marginLeft = '100px';
-        body.style.backgroundColor = '#fff';
+        body.style.backgroundColor = '#ffffe0';
         body.style.color = '#313123';
         
      } else {
