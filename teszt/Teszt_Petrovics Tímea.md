@@ -26,11 +26,11 @@ Ebben a dokumentumban lesz felsorolva az elvégzett tesztek elvárásai és ered
 
 | Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
 | :---: | --- | --- | --- | --- |
-| Funkció - Új esemény létrehozása | 2022.xx.xx. | Képes új esemény létrehozására | sikeres | - |
-| Funkció - Új esemény létrehozása  | 2022.xx.xx. | Eltárolja a név, idő mezőket helyes formátumban | sikeres | - |
-| Funkció - Új esemény létrehozása | 2022.xx.xx. | Eltárolja további információkat az eseményről | sikertelen | a funkciókat fontosság szerint hozzuk létre és első sorban a működő képes program a célunk a részletesség csak másodlagos |
-| Frontend | 2022.xx.xx. | Láthatóan jelenik meg az oldal | sikeres | - |
-| Frontend | 2022.xx.xx. | Az oldal telefonos nézetben is megtakinthető | sikertelen | A regisztráció és bejelntkezés működik telefonos nézetben is ám a főoldaln még vannak hibás nézetek. |
+| Funkció - Új esemény létrehozása | 2022.04.10. | Képes új esemény létrehozására | sikeres | - |
+| Funkció - Új esemény létrehozása  | 2022.04.15. | Eltárolja a név, idő mezőket helyes formátumban | sikeres | - |
+| Funkció - Új esemény létrehozása | 2022.04.16. | Eltárolja további információkat az eseményről | sikertelen | a funkciókat fontosság szerint hozzuk létre és első sorban a működő képes program a célunk a részletesség csak másodlagos |
+| Frontend | 2022.04.16. | Láthatóan jelenik meg az oldal | sikeres | - |
+| Frontend | 2022.04.20. | Az oldal telefonos nézetben is megtakinthető | sikertelen | A regisztráció és bejelntkezés működik telefonos nézetben is ám a főoldaln még vannak hibás nézetek. |
 
 Esemény létrehozása:
  ami nem megfelelően működött, ez a későbbiek során javításra szorul.
