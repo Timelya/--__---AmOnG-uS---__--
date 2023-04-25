@@ -18,7 +18,7 @@ function DarkMode() {
         body.style.color = '#313123';
         
      } else {
-      body.style.backgroundColor = '#333';
+      body.style.backgroundColor = '#82cae0';
       body.style.color = '#efefaa';
       body.style.marginLeft = '100px';
        }

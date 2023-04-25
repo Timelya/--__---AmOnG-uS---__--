@@ -15,9 +15,14 @@ function EventCard(props: EventCardProps) {
 				alt="Event neve"
 				className="h-48 rounded-t-xl"
 			/>
+			
 			<div>
+				
 				<button className="w-48 h-12 text-white">{props.name}</button>
+				
 			</div>
+			<button className="w-24 h-12 text-white bg-green-500">Test</button>
+			<button className="w-24 h-12 text-white bg-red-500">Test</button>
 		</div>
 	);
 }
