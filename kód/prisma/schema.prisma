@@ -18,10 +18,6 @@ model user {
 model event {
   id          Int     @id @default(autoincrement())
   name        String  @db.VarChar(255)
-  theme       String  @db.VarChar(32)
-  dress       String  @db.VarChar(32)
-  description String  @db.VarChar(50)
-  people      String  @db.VarChar(32)
   start       String? @db.VarChar(255)
   end         String? @db.VarChar(255)
 }
