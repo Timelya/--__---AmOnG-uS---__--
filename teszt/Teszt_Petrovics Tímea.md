@@ -13,12 +13,12 @@ Esemény létrehozása, meghívók küldése, QR kód beolvasásával jelenlét 
 _________________________________________________________________________________________________________________________________________________
 </p>
 <p align="center">𝙳𝙾𝙲𝚄𝙼𝙴𝙽𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽<br>
-2023.03.11.</p>
+2023.04.25.</p>
 <br><br><br><br>
 
 Teszteléseket végezte: Petrovics Tímea
 
-Operációs rendszer: OS
+Operációs rendszer: OS - Opera böngészőben tesztelve
 
 Ebben a dokumentumban lesz felsorolva az elvégzett tesztek elvárásai és eredményei, illetve időpontjai (Alfa, Béta és Végleges verzió).
 
