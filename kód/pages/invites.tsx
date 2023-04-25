@@ -8,6 +8,7 @@ import EventCard from "./Components/EventCard";
 import { GetServerSideProps } from "next";
 import DarkMode from "./Components/DarkMode";
 import EventAdd from "./Components/eventAdd";
+import InviteCard from "./Components/InviteCard";
 
 interface Event {
   events: {
@@ -27,7 +28,7 @@ function Home(events: Event) {
         </Head>
         <Navbar />
         {
-          events.events.map(x => <EventCard key={x.id} name={x.name} />)
+          events.events.map(x => <InviteCard key={x.id} name={x.name} />)
         }
         <DarkMode />
       </div>

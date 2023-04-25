@@ -16,8 +16,10 @@ model user {
 }
 
 model event {
-  id          Int     @id @default(autoincrement())
-  name        String  @db.VarChar(255)
-  start       String? @db.VarChar(255)
-  end         String? @db.VarChar(255)
+  id        Int     @id @default(autoincrement())
+  name      String  @db.VarChar(255)
+  start     String? @db.VarChar(255)
+  end       String? @db.VarChar(255)
+  isprivate Boolean
+  ownerid   Int
 }

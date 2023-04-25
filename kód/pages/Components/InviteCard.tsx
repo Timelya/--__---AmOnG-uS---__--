@@ -7,7 +7,7 @@ interface EventCardProps {
 	key: string;
 }
 
-function EventCard(props: EventCardProps) {
+function InviteCard(props: EventCardProps) {
 	return (
 		<div className="inline-block w-48 m-4 h-60 rounded-xl bg-slate-900" id={props.key}>
 			<img
@@ -21,7 +21,9 @@ function EventCard(props: EventCardProps) {
 				<button className="w-48 h-12 text-white">{props.name}</button>
 				
 			</div>
+			<button className="w-24 h-12 text-white bg-green-500">✔</button>
+			<button className="w-24 h-12 text-white bg-red-500">❌</button>
 		</div>
 	);
 }
-export default EventCard;
+export default InviteCard;
