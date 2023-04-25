@@ -17,7 +17,8 @@ async function main() {
 			name: "b",
 			email: "b@b.b",
 			password: sha256("b"),
-			events: {},
+			events: {
+			},
 		},
 	});
 	//seeds the event table
@@ -27,6 +28,8 @@ async function main() {
 
 			start: "2021-01-01",
 			end: "2021-01-01",
+			public: false,
+			organizerId: 2,
 		},
 	});
 	await prisma.event.create({
@@ -34,9 +37,13 @@ async function main() {
 			name: "Kisfaszú koncert",
 			start: "2021-01-01",
 			end: "2021-01-01",
+			public: true,
+			organizerId: 1,
+
 		},
 	});
-	//seeds the ticket table
+
+	
 }
 main()
 	.then(async () => {
