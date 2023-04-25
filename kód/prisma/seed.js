@@ -10,7 +10,8 @@ async function main() {
 			name: "a",
 			email: "a@a.a",
 			password: sha256("a"),
-			admin: true,
+			
+
 		},
 	});
 	await prisma.user.create({
@@ -18,13 +19,12 @@ async function main() {
 			name: "b",
 			email: "b@b.b",
 			password: sha256("b"),
-			admin: false,
 		},
 	});
 	//seeds the event table
 	await prisma.event.create({
 		data: {
-			name: "a",
+			name: "Nagyfaszú koncert",
 			description:
 				"lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
 
@@ -34,7 +34,7 @@ async function main() {
 	});
 	await prisma.event.create({
 		data: {
-			name: "b",
+			name: "Kisfaszú koncert",
 			description:
 				"lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
 			start: "2021-01-01",

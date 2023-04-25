@@ -6,7 +6,6 @@ interface EventCardProps {
 	name: string;
 	key: string;
 }
-
 function EventCard(props: EventCardProps) {
 	return (
 		<div className="inline-block w-48 m-4 h-60 rounded-xl bg-slate-900" id={props.key}>
@@ -16,7 +15,7 @@ function EventCard(props: EventCardProps) {
 				className="h-48 rounded-t-xl"
 			/>
 			<div>
-				<button className="w-48 h-12 text-white">{props.name}</button>
+				<button className="w-48 h-12 text-white" >{props.name}</button>
 			</div>
 		</div>
 	);
