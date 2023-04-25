@@ -115,8 +115,6 @@ const Register: NextPage<User> = ({ users, session }) => {
 		}
 	}
 
-
-
 	return (
 		<>
 			<Head>
@@ -143,8 +141,8 @@ const Register: NextPage<User> = ({ users, session }) => {
 							<div className="py-5 text-center col-12 align-self-center">
 								<div className="pt-5 pb-5 text-center section pt-sm-2">
 									<div className="pb-3 mb-0">
-										<span>Jelentkezz be </span>
-										<span> Regisztrálj</span>
+									<div className="inline pr-4 text-right">Jelentkezz be</div>	 	   
+									<div className="inline pl-4 text-left">Regisztrálj</div>	 	   
 									</div>
 									<input
 										className="checkbox"

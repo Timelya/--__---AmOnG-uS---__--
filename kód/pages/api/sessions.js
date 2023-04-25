@@ -49,14 +49,14 @@ async function createSessionRoute(req, res) {
 		const email = req.body.data.email;
 		const password = req.body.data.password;
 		const foundUser = users.find(
-			(user) =>
-				user.email == email && user.password == sha256(password)
-		)
+			(user) => user.email == email && user.password == sha256(password)
+		);
 		if (
 			//check if foundUser is not undefined
 			foundUser !== undefined
 		) {
 			req.session.user = {
+				id: foundUser.id,
 				email: foundUser.email,
 				username: foundUser.name,
 				isLoggedIn: true,
