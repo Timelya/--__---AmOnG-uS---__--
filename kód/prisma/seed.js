@@ -1,4 +1,3 @@
-
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 //declare sha256
@@ -10,8 +9,7 @@ async function main() {
 			name: "a",
 			email: "a@a.a",
 			password: sha256("a"),
-			
-
+			events: {},
 		},
 	});
 	await prisma.user.create({
@@ -19,14 +17,13 @@ async function main() {
 			name: "b",
 			email: "b@b.b",
 			password: sha256("b"),
+			events: {},
 		},
 	});
 	//seeds the event table
 	await prisma.event.create({
 		data: {
 			name: "Nagyfaszú koncert",
-			description:
-				"lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
 
 			start: "2021-01-01",
 			end: "2021-01-01",
@@ -35,8 +32,6 @@ async function main() {
 	await prisma.event.create({
 		data: {
 			name: "Kisfaszú koncert",
-			description:
-				"lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
 			start: "2021-01-01",
 			end: "2021-01-01",
 		},
