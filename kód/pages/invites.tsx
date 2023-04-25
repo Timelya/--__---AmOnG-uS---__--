@@ -29,7 +29,7 @@ function Home(events: Event) {
         <Navbar />
         {
           
-          events.events.map(x => <InviteCard id={x.id} name={x.name} />)
+          events.events.map(x => <InviteCard id={x.id as unknown as number} name={x.name} />)
         }
         <DarkMode />
       </div>

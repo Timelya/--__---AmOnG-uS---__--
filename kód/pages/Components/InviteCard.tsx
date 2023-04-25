@@ -1,15 +1,16 @@
 import Head from "next/head";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import { prisma } from "../../lib/prisma";
 //typescript interface for the passed props
 interface EventCardProps {
 	name: string;
-	id: string;
+	id: number;
 }
 
 function InviteCard(props: EventCardProps) {
 	return (
-		<div className="inline-block w-48 m-4 h-60 rounded-t-xl bg-slate-900" id={props.id}>
+		<div className="inline-block w-48 m-4 h-60 rounded-t-xl bg-slate-900" id={props.id as unknown as string}>
 			<img
 				src="https://upload.wikimedia.org/wikipedia/commons/7/70/Solid_white.svg"
 				alt="Event neve"
@@ -30,10 +31,29 @@ function InviteCard(props: EventCardProps) {
 }
 export default InviteCard;
 
-function acceptInvite(id: string) {
+async function acceptInvite(id: number) {
 	console.log("Invite accepted" + id)
+	prisma?.invites.updateMany({
+		where: {
+		  eventid: id,
+		  //ide még userid check
+		},
+		data: {
+		  accepted: 1,
+		},
+	  })  
+
 }
 
-function denyInvite(id: string) {
+async function denyInvite(id: number) {
 	console.log("Invite denied" + id)
+	prisma?.invites.updateMany({
+		where: {		  
+            eventid: id,
+			//ide még userid check
+		},
+		data: {
+		  accepted: -1,
+		},
+	  })
 }
