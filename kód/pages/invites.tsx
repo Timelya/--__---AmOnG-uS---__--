@@ -28,7 +28,8 @@ function Home(events: Event) {
         </Head>
         <Navbar />
         {
-          events.events.map(x => <InviteCard key={x.id} name={x.name} />)
+          
+          events.events.map(x => <InviteCard id={x.id} name={x.name} />)
         }
         <DarkMode />
       </div>
@@ -45,6 +46,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
     },
   });
   events = JSON.parse(JSON.stringify(events))
+  
   return {
     props: {
       events,

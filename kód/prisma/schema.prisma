@@ -23,3 +23,10 @@ model event {
   isprivate Boolean
   ownerid   Int
 }
+
+model invites {
+  id       Int @id @default(autoincrement())
+  eventid  Int
+  userid   Int
+  accepted Int
+}
