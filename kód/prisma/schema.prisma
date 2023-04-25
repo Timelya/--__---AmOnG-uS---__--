@@ -21,7 +21,7 @@ model event {
   name        String  @db.VarChar(255)
   start       String? @db.VarChar(255)
   end         String? @db.VarChar(255)
-  public     Boolean @default(false)
-  organizerId Int    @db.Int
+  public      Boolean @default(false)
+  organizerId Int     @db.Int
   organizer   user?   @relation(fields: [organizerId], references: [id])
 }
