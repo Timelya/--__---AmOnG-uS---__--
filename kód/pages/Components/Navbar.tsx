@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import { Icon } from '@iconify/react';
 import { useRouter } from 'next/router';
