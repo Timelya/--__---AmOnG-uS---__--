@@ -16,7 +16,7 @@ function Navbar() {
                 <SideNav.Nav defaultSelected="home">
 
                 <NavItem eventKey="Főoldal" onClick={() => router.push('/')}>
-                        <NavIcon><Icon icon="material-symbols:home-outline" className="pl-2 text-4xl ..." /></NavIcon>
+                        <NavIcon><Icon icon="material-symbols:home-outline" className="pl-2 text-4xl ..." onClick={() => router.push('/')}/></NavIcon>
                         <NavText>
                                 Főoldal
                         </NavText>
@@ -24,7 +24,7 @@ function Navbar() {
 
                     <NavItem eventKey="Rendezvény létrehozás" onClick={() => router.push('/newevent')}>
                         <NavIcon>
-                            <Icon icon="material-symbols:event-upcoming" className="pl-2 text-4xl ..." />
+                            <Icon icon="material-symbols:event-upcoming" className="pl-2 text-4xl ..." onClick={() => router.push('/newevent')}/>
                         </NavIcon>
                         <NavText>
                             Rendezvény létrehozás
@@ -37,32 +37,25 @@ function Navbar() {
                         </NavText>
                     </NavItem>
 
-                    <NavItem eventKey="Meghivók">
-                        <NavIcon><Icon icon="icon-park-outline:accept-email" className="pl-2 text-4xl ..." /></NavIcon>
+                    <NavItem eventKey="Meghivók" onClick={() => router.push('/meghivo')}>
+                        <NavIcon><Icon icon="icon-park-outline:accept-email" className="pl-2 text-4xl ..." onClick={() => router.push('/meghivo')}/></NavIcon>
                         <NavText>
                             Meghivók
                         </NavText>
                     </NavItem>
 
                     <NavItem eventKey="Rendezvény lista" onClick={() => router.push('/eventList')}>
-                        <NavIcon><Icon icon="material-symbols:featured-play-list-outline" className="pl-2 text-4xl ..." /></NavIcon>
+                        <NavIcon><Icon icon="material-symbols:featured-play-list-outline" className="pl-2 text-4xl ..."  onClick={() => router.push('/eventList')}/></NavIcon>
                         <NavText>
                             Rendezvény lista
                         </NavText>
                     </NavItem>
 
 
-                    <NavItem eventKey="Kijelentkezés" onClick={() => router.push('/newevent')}>
-                        <NavIcon><Icon icon="fluent-mdl2:leave-user" className="pl-2 text-4xl ..." /></NavIcon>
-                        <NavText>
-                            <button name="logout-btn" onClick={async function () { 
-                                await fetch("/api/logout", {method: "POST",headers: {
-								"Content-Type": "application/json",},});
-						router.push("/register");
-					}}
-				>
-					Kijelentkezés
-				</button>
+                    <NavItem eventKey="Kijelentkezés">
+                        <NavIcon onClick={async function () { await fetch("/api/logout", {method: "POST",headers: {"Content-Type": "application/json",},}); router.push("/register");}}><Icon icon="fluent-mdl2:leave-user" className="pl-2 text-4xl ..." /></NavIcon>
+                        <NavText onClick={async function () { await fetch("/api/logout", {method: "POST",headers: {"Content-Type": "application/json",},}); router.push("/register");}}>
+                            Kijelentkezés
                         </NavText>
                     </NavItem>
 

@@ -22,6 +22,8 @@ model event {
   start       String? @db.VarChar(255)
   end         String? @db.VarChar(255)
   public      Boolean @default(false)
-  organizerId Int     @db.Int
-  organizer   user?   @relation(fields: [organizerId], references: [id])
+  organizerId Int
+  organizer   user    @relation(fields: [organizerId], references: [id])
+
+  @@index([organizerId], map: "event_organizerId_fkey")
 }

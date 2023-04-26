@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*? a nyomi hörcsög kinézete */
+
 .wheel-and-hamster {
     --dur: 1s;
     position: relative;
