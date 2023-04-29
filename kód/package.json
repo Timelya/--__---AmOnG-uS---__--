@@ -8,6 +8,10 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "prisma": {
+    "seed": "node ./prisma/seed.js"
+  },
+  
   "dependencies": {
     "@ionic/react": "^7.0.3",
     "@material-tailwind/react": "^1.4.2",

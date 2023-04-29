@@ -96,11 +96,7 @@ const Register: NextPage<User> = ({ users, session }) => {
 					x.email == data.email && x.password == sha256(data.password)
 			);
 			if (user) {
-				console.log(
-					{ "Content-Type": "application/json" } +
-						" " +
-						JSON.stringify({ data })
-				);
+				
 				const response = await fetch("/api/sessions", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
@@ -109,7 +105,6 @@ const Register: NextPage<User> = ({ users, session }) => {
 				if (response.ok) {
 					console.log(response);
 					window.location.href = "/";
-					//return alert("Sikeres bejelentkezés");
 				}
 			}
 		}

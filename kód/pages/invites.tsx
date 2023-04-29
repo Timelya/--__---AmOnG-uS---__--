@@ -9,48 +9,67 @@ import { GetServerSideProps } from "next";
 import DarkMode from "./Components/DarkMode";
 import EventAdd from "./Components/eventAdd";
 import InviteCard from "./Components/InviteCard";
+import { withSessionSsr } from "../lib/config/withSession";
 
-interface Event {
-  events: {
-    id: string;
-    name: string;
-    start: number;
-    end: number;
-  }[];
+interface Invite{
+	invites:
+	{
+		id: string;
+		eventid: string;
+		userid: string;
+	}[];
+
 }
-function Home(events: Event) {
-  return (
-    <>
-      <div>
-        <Head>
-          <title>Rendezvény lista</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <Navbar />
-        {
-          
-          events.events.map(x => <InviteCard id={x.id as unknown as number} name={x.name} />)
-        }
-        <DarkMode />
-      </div>
-    </>
-  );
+
+function Home(invites: Invite) {
+	return (
+		<>
+			<div>
+				<Head>
+					<title>Rendezvény lista</title>
+					<link rel="icon" href="/favicon.ico" />
+				</Head>
+				<Navbar />
+				{
+					invites.invites.map((invite) => (
+						<InviteCard userId={invite.userid} eventId={invite.eventid} id={Number(invite.id)} key={Number(invite.id)} />
+					))
+
+				}
+				<DarkMode />
+			</div>
+		</>
+	);
 }
-export const getServerSideProps: GetServerSideProps = async () => {
-  let events = await prisma?.event.findMany({
-    select: {
-      id: true,
-      name: true,
-      start: true,
-      end: true
-    },
-  });
-  events = JSON.parse(JSON.stringify(events))
-  
-  return {
-    props: {
-      events,
-    },
-  };
-}
+export const getServerSideProps = withSessionSsr(
+	async ({ req, res }: { req: any; res: any }) => {
+		console.log(req.session);
+    if (!req.session) {
+      return {
+        redirect: {
+          destination: "/register",
+          permanent: false,
+        },
+      };
+    }
+		let invites = await prisma?.invites.findMany({
+			select: {
+				id: true,
+				eventid: true,
+				userid: true,
+			},
+			where: {
+				userid: req.session.id,
+			},
+
+		});
+		invites = JSON.parse(JSON.stringify(invites));
+
+		return {
+			props: {
+				invites,
+			},
+		};
+	}
+);
 export default Home;

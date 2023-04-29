@@ -28,5 +28,5 @@ model invites {
   id       Int @id @default(autoincrement())
   eventid  Int
   userid   Int
-  accepted Int
+  accepted Int @default(0)
 }
