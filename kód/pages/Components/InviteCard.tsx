@@ -7,8 +7,7 @@ import useInvite from "../../lib/useInvite";
 import fetchJson from "../../lib/fetchJson";
 interface InviteCardProps {
 	id: number;
-	userId: number;
-	eventId: number;
+	eventName: string;
 }
 
 function InviteCard(props: InviteCardProps) {
@@ -23,36 +22,36 @@ function InviteCard(props: InviteCardProps) {
 				className="h-48 rounded-t-xl"
 			/>
 
-			<div>#{props.userId} megívva # {props.eventId} számú eventre</div>
-
-			<form
-				onSubmit={(e) => {
-					e.preventDefault();
-					handleInvite(props.id, true);
-				}}
-			>
-				<input
+			<div className="p-0 m-0">
+				<div>Meghívtak a #{props.eventName} eventre</div>
+				<button
 					className="w-24 h-12 text-white bg-green-500 rounded-bl-xl"
-					type="submit"
-					value="✔"
-				/>
-			</form>
+					onClick={async (e) => {
+						e.preventDefault();
+						handleInvite(props.id, false);
+						//refresh the page
+						window.location.reload();
+					}}
+				>
+					✔
+				</button>
 
-			<button
-				className="w-24 h-12 text-white bg-red-500 rounded-br-xl"
-				onClick={async (e) => {
-					e.preventDefault();
-					handleInvite(props.id, false);
-				}}
-			>
-				X
-			</button>
+				<button
+					className="w-24 h-12 text-white bg-red-500 rounded-br-xl"
+					onClick={async (e) => {
+						e.preventDefault();
+						handleInvite(props.id, false);
+					}}
+				>
+					X
+				</button>
+			</div>
 		</div>
 	);
 }
 async function handleInvite(id: number, accept: boolean) {
 	try {
-		console.log(id,accept);
+		console.log(id, accept);
 		const response = await fetch("/api/handleInvite", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },

@@ -20,15 +20,12 @@ export default async function handleInvite(
 		if (
 			currentInvite !== undefined
 		) {
-			console.log(req.body);
-			const acceptNum: number = req.body.accept===true ? 1 : -1;
-			console.log(currentInvite?.id, acceptNum);
 			await prisma?.invites.update({
 				where: {
 					id: req.body.id as unknown as number,
 				},
 				data: {
-					accepted: acceptNum,
+					accepted: req.body.accept? 1 : -1,
 				},
 			});
 			return res.status(200).send("");

@@ -10,18 +10,22 @@ import DarkMode from "./Components/DarkMode";
 import EventAdd from "./Components/eventAdd";
 import InviteCard from "./Components/InviteCard";
 import { withSessionSsr } from "../lib/config/withSession";
-
-interface Invite{
-	invites:
-	{
-		id: string;
+interface InvitePageProps {
+	invites: {
 		eventid: string;
-		userid: string;
+		id: string;
+		eventName: string;
+	}[],
+	eventNames: {
+		id: string;
+		name: string;
 	}[];
-
 }
 
-function Home(invites: Invite) {
+
+function Home(props: InvitePageProps) {
+	console.log(props);
+
 	return (
 		<>
 			<div>
@@ -30,12 +34,14 @@ function Home(invites: Invite) {
 					<link rel="icon" href="/favicon.ico" />
 				</Head>
 				<Navbar />
-				{
-					invites.invites.map((invite) => (
-						<InviteCard userId={invite.userid} eventId={invite.eventid} id={Number(invite.id)} key={Number(invite.id)} />
-					))
-
-				}
+				{props.invites.map((invite) => (
+					<InviteCard
+						id={Number(invite.id)}
+						eventName={props.eventNames.find(
+							(event) => event.id == invite.eventid
+						)?.name as string}
+					/>
+				))}
 				<DarkMode />
 			</div>
 		</>
@@ -44,14 +50,14 @@ function Home(invites: Invite) {
 export const getServerSideProps = withSessionSsr(
 	async ({ req, res }: { req: any; res: any }) => {
 		console.log(req.session);
-    if (!req.session) {
-      return {
-        redirect: {
-          destination: "/register",
-          permanent: false,
-        },
-      };
-    }
+		if (!req.session) {
+			return {
+				redirect: {
+					destination: "/register",
+					permanent: false,
+				},
+			};
+		}
 		let invites = await prisma?.invites.findMany({
 			select: {
 				id: true,
@@ -60,14 +66,22 @@ export const getServerSideProps = withSessionSsr(
 			},
 			where: {
 				userid: req.session.id,
+				accepted: 0,
 			},
-
 		});
-		invites = JSON.parse(JSON.stringify(invites));
+		const eventnames = await prisma?.event.findMany({
+			select: {
+				id: true,
+				name: true,
+			},
+		});
 
+		invites = JSON.parse(JSON.stringify(invites));
+		console.log(eventnames);
 		return {
 			props: {
 				invites,
+				eventNames: eventnames,
 			},
 		};
 	}
