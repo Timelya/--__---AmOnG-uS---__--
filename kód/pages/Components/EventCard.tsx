@@ -20,9 +20,11 @@ function EventCard(props: EventCardProps) {
 				alt="Event neve"
 				className="h-48 rounded-t-xl"
 			/>
+			
 			<div>
-				<a href={"events/" + props.id}>dsadas</a>
+
 				<button className="w-48 h-12 text-white">{props.name}</button>
+				
 			</div>
 		</div>
 	);

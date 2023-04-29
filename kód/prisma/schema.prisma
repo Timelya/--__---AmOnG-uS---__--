@@ -25,3 +25,11 @@ model event {
   organizerId Int     @db.Int
   organizer   user?   @relation(fields: [organizerId], references: [id])
 }
+
+model invites {
+  id       Int @id @default(autoincrement())
+  eventid  Int
+  userid   Int
+  accepted Int @default(0)
+  
+}
