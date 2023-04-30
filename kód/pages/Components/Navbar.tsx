@@ -29,7 +29,7 @@ function Navbar() {
                             Rendezvény létrehozás
                         </NavText>
                     </NavItem>
-                    <NavItem eventKey="Profil szerkesztés">
+                    <NavItem eventKey="Profil szerkesztés" onClick={() => router.push('/EditProfilePage')}>
                         <NavIcon><Icon icon="material-symbols:edit-square-outline" className="pl-2 text-4xl ..." /></NavIcon>
                         <NavText>
                             Profil szerkesztés

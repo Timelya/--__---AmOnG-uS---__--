@@ -4,10 +4,8 @@ import '../styles/hamster.css'
 import '../styles/susButton.css'
 import '../styles/eventAddLabal.css'
 import '../styles/darkModebutton.css'
-
 import '../styles/nav/react-sidenav.min.css'
-//java
-import '../java/nav.js'
+
 import type { AppProps } from 'next/app'
 import { SWRConfig } from 'swr'
 import fetchJson from '../lib/fetchJson'

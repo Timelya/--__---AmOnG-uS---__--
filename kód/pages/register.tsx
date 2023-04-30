@@ -145,12 +145,7 @@ const Register: NextPage<User> = ({ users, session }) => {
 											<div className="inline pr-4 text-right">Jelentkezz be</div>
 											<div className="inline pl-4 text-left">Regisztrálj</div>
 										</div>
-										<input
-											className="checkbox"
-											type="checkbox"
-											id="reg-log"
-											name="reg-log"
-										/>
+										<input className="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
 										<label htmlFor="reg-log" />
 										<div className="mx-auto card-3d-wrap">
 											<div className="card-3d-wrapper">
@@ -160,25 +155,13 @@ const Register: NextPage<User> = ({ users, session }) => {
 															<div className="pb-3 mb-4 text-lg">
 																Jelentkezz be
 															</div>
-															<form
-																onSubmit={(e) => {
-																	e.preventDefault();
-																	handleLogin(
-																		form
-																	);
-																}}
-															>
+															<form onSubmit={(e) => {e.preventDefault(); handleLogin(form);}}>
 																<div className="form-group">
-																	<input
-																		type="email"
-																		className="form-style"
-																		value={
-																			form.email
-																		}
+																	<input type="email" className="form-style"
+																		value={form.email}
 																		onChange={(
 																			e
-																		) =>
-																			setForm(
+																		) =>setForm(
 																				{
 																					...form,
 																					email: e
