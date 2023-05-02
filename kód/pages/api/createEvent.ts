@@ -3,21 +3,25 @@ import { prisma } from "../../lib/prisma"
 
 type Data = {
   name: string,
-  start: string,
-  end: string,
+  organizerId: string,
+  public: boolean,
+  start: Date,
+  end: Date,
 }
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const {name, start, end} = req.body
+  const { name, public: isPublic, organizerId, start, end } = req.body
 
   try {
     // CREATE
     await prisma.event.create({
       data: {
         name,
+        organizerId,
+        public: isPublic,
         start,
         end,
       }
@@ -28,4 +32,3 @@ export default async function handler(
     res.status(400).json({ message: error })
   }
 }
-

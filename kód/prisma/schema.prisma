@@ -33,5 +33,4 @@ model invites {
   eventid  Int
   userid   Int
   accepted Int @default(0)
-  
 }
