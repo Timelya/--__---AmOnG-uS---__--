@@ -36,8 +36,8 @@ function Navbar() {
                         </NavText>
                     </NavItem>
 
-                    <NavItem eventKey="Meghivók" onClick={() => router.push('/meghivo')}>
-                        <NavIcon><Icon icon="icon-park-outline:accept-email" className="pl-2 text-4xl ..." onClick={() => router.push('/meghivo')}/></NavIcon>
+                    <NavItem eventKey="Meghivók" onClick={() => router.push('/invites')}>
+                        <NavIcon><Icon icon="icon-park-outline:accept-email" className="pl-2 text-4xl ..." onClick={() => router.push('/invites')}/></NavIcon>
 
                         <NavText>
                             Meghivók
