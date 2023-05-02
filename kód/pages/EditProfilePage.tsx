@@ -4,6 +4,7 @@ import { RouteComponentProps } from "@reach/router";
 import { prisma } from "../lib/prisma";
 import { withSessionSsr } from "../lib/config/withSession";
 import { redirect } from "next/dist/server/api-utils";
+import Navbar from "./Components/Navbar";
 
 interface FormData {
 	name: string;
@@ -55,6 +56,7 @@ const EditProfilePage: React.FC<RouteComponentProps> = (props: Props) => {
 
 	return (
 		<div>
+			<Navbar></Navbar>
 			<form
 				onSubmit={(e) => {
 					e.preventDefault();
