@@ -28,8 +28,9 @@ function InviteCard(props: InviteCardProps) {
 					className="w-24 h-12 text-white bg-green-500 rounded-bl-xl"
 					onClick={async (e) => {
 						e.preventDefault();
-						handleInvite(props.id, false);
-						window.location.reload();
+						handleInvite(props.id, true).then(() => {
+							window.location.reload();
+						});
 					}}
 				>
 					✔
@@ -39,7 +40,9 @@ function InviteCard(props: InviteCardProps) {
 					className="w-24 h-12 text-white bg-red-500 rounded-br-xl"
 					onClick={async (e) => {
 						e.preventDefault();
-						handleInvite(props.id, false);
+						handleInvite(props.id, false).then(() => {
+							window.location.reload();
+						});
 					}}
 				>
 					X
@@ -50,6 +53,7 @@ function InviteCard(props: InviteCardProps) {
 }
 async function handleInvite(id: number, accept: boolean) {
 	try {
+		console.log(id, accept);
 		const response = await fetch("/api/handleInvite", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
