@@ -1,3 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*? sötét és világos táma közötti gomb kinézetét */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.container span,
+.container label {
+  cursor: pointer;
+}
+
+
 input[type = "checkbox"] {
     visibility: hidden;
     display: none;
@@ -11,7 +35,9 @@ input[type = "checkbox"] {
     height: 30px;
     background: #d3d3d3;
     border-radius: 50px;
-    position: relative;
+    position: fixed;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
     box-shadow: 9px 9px 29px #969696,
                -9px -9px 29px #ffffff;
@@ -53,6 +79,26 @@ input[type = "checkbox"] {
   input[type = "checkbox"]:checked ~ span {
     left: 29px;
     transition: 0.3s ease-in;
-    background: #ffaa00;
+    background: #f06ee5;
     transform: rotate(220deg);
+  }
+#cardName
+{
+  background-color: #0f172a;
+  color: #efefaa;
+}
+#cardModeData {
+  background-color: #ffffff;
+  color: #000000;
+  }
+
+.dark-mode #cardName
+{
+  background-color: #f86767;
+  color: #24031c;
+}
+.dark-mode #cardModeData
+{
+  background-color: #ff9e9e;
+  color: #24031c;
   }

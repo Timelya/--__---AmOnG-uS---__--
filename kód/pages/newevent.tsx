@@ -14,9 +14,6 @@ import { IonDatetime } from '@ionic/react';
 interface FormData {
 	id: string;
 	name: string;
-	theme: string;
-	description: string;
-	people: string;
 	startString: string;
 	endString: string;
 	start: string;
@@ -27,9 +24,6 @@ interface Event {
 	events: {
 		id: string;
 		name: string;
-		theme: string;
-		description: string;
-		people: string;
 		start: number;
 		end: number;
 	}[];
@@ -38,9 +32,6 @@ interface Event {
 const MakeEvent: NextPage<Event> = ({ events }) => {
 	const [form, setForm] = useState<FormData>({
 		name: "",
-		theme: "",
-		description: "",
-		people: "",
 		start: "",
 		end: "",
 		id: "",
@@ -75,9 +66,6 @@ const MakeEvent: NextPage<Event> = ({ events }) => {
 		}).then(() => {
 			setForm({
 				name: "",
-				theme: "",
-				description: "",
-				people: "",
 				start: "",
 				end: "",
 				id: "",

@@ -78,7 +78,7 @@ const Register: NextPage<User> = ({ users, session }) => {
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({ data }),
 		}).then(() => {
-			router.push("/protected");
+			router.push("/");
 		});
 	}
 	async function handleLogin(data: FormData) {
@@ -96,7 +96,12 @@ const Register: NextPage<User> = ({ users, session }) => {
 					x.email == data.email && x.password == sha256(data.password)
 			);
 			if (user) {
-				
+				console.log(
+					{ "Content-Type": "application/json" } +
+					" " +
+					JSON.stringify({ data })
+				);
+
 				const response = await fetch("/api/sessions", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
@@ -129,216 +134,200 @@ const Register: NextPage<User> = ({ users, session }) => {
 					href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
 				/>
 			</Head>
-			<div className="text-amber-200">
-				<div className="section">
-					<div className="container">
-						<div className="row full-height justify-content-center">
-							<div className="py-5 text-center col-12 align-self-center">
-								<div className="pt-5 pb-5 text-center section pt-sm-2">
-									<div className="pb-3 mb-0">
-									<div className="inline pr-4 text-right">Jelentkezz be</div>	 	   
-									<div className="inline pl-4 text-left">Regisztrálj</div>	 	   
-									</div>
-									<input
-										className="checkbox"
-										type="checkbox"
-										id="reg-log"
-										name="reg-log"
-									/>
-									<label htmlFor="reg-log" />
-									<div className="mx-auto card-3d-wrap">
-										<div className="card-3d-wrapper">
-											<div className="card-front">
-												<div className="center-wrap">
-													<div className="text-center section">
-														<div className="pb-3 mb-4">
-															Jelentkezz be
-														</div>
-														<form
-															onSubmit={(e) => {
-																e.preventDefault();
-																handleLogin(
-																	form
-																);
-															}}
-														>
-															<div className="form-group">
-																<input
-																	type="email"
-																	className="form-style"
-																	value={
-																		form.email
-																	}
-																	onChange={(
-																		e
-																	) =>
-																		setForm(
-																			{
-																				...form,
-																				email: e
-																					.target
-																					.value,
-																			}
-																		)
-																	}
-																	placeholder="Email"
-																/>
-																<i className="input-icon uil uil-at" />
+			<div id="body">
+				<div className="text-amber-200">
+					<div className="section">
+						<div className="container">
+							<div className="row full-height justify-content-center">
+								<div className="py-5 text-center col-12 align-self-center">
+									<div className="pt-5 pb-5 text-center section pt-sm-2">
+										<div className="pb-3 mb-0">
+											<div className="inline pr-4 text-right">Jelentkezz be</div>
+											<div className="inline pl-4 text-left">Regisztrálj</div>
+										</div>
+										<input className="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+										<label htmlFor="reg-log" />
+										<div className="mx-auto card-3d-wrap">
+											<div className="card-3d-wrapper">
+												<div className="card-front">
+													<div className="center-wrap">
+														<div className="text-center section">
+															<div className="pb-3 mb-4 text-lg">
+																Jelentkezz be
 															</div>
-															<div className="mt-2 form-group">
-																<input
-																	type="password"
-																	className="form-style"
-																	placeholder="Password"
-																	value={
-																		form.password
-																	}
-																	onChange={(
-																		e
-																	) =>
-																		setForm(
-																			{
-																				...form,
-																				password:
-																					e
+															<form onSubmit={(e) => {e.preventDefault(); handleLogin(form);}}>
+																<div className="form-group">
+																	<input type="email" className="form-style"
+																		value={form.email}
+																		onChange={(
+																			e
+																		) =>setForm(
+																				{
+																					...form,
+																					email: e
 																						.target
 																						.value,
-																			}
-																		)
-																	}
-																/>
-																<i className="input-icon uil uil-lock-alt" />
-															</div>
-															<button
-																type="submit"
-																className="mt-4 btn"
-															>
-																Login{" "}
-															</button>
-														</form>
+																				}
+																			)
+																		}
+																		placeholder="Email"
+																	/>
+																	<i className="input-icon uil uil-at" />
+																</div>
+																<div className="mt-2 form-group">
+																	<input
+																		type="password"
+																		className="form-style"
+																		placeholder="Password"
+																		value={
+																			form.password
+																		}
+																		onChange={(
+																			e
+																		) =>
+																			setForm(
+																				{
+																					...form,
+																					password:
+																						e
+																							.target
+																							.value,
+																				}
+																			)
+																		}
+																	/>
+																	<i className="input-icon uil uil-lock-alt" />
+																</div>
+																<button
+																	type="submit"
+																	className="mt-4 btn" >
+																	Bejelentkezés{" "}
+																</button>
+															</form>
+														</div>
 													</div>
 												</div>
-											</div>
-											<div className="card-back">
-												<div className="center-wrap">
-													<div className="text-center section">
-														<div className="pb-3 mb-3">
-															Regisztrálj
-														</div>
-														<form
-															onSubmit={(e) => {
-																e.preventDefault();
-																handleRegister(
-																	form
-																);
-															}}
-														>
-															<div className="form-group">
-																<input
-																	name="reg-name"
-																	placeholder="Név"
-																	value={
-																		form.name
-																	}
-																	onChange={(
-																		e
-																	) =>
-																		setForm(
-																			{
-																				...form,
-																				name: e
-																					.target
-																					.value,
-																			}
-																		)
-																	}
-																	type="text"
-																	className="form-style"
-																/>
-																<i className="input-icon uil uil-user" />
+												<div className="card-back">
+													<div className="center-wrap">
+														<div className="text-center section">
+															<div className="pb-3 mb-3 text-lg">
+																Regisztrálj
 															</div>
-															<div className="mt-2 form-group">
-																<input
-																	name="reg-email"
-																	value={
-																		form.email
-																	}
-																	onChange={(
-																		e
-																	) =>
-																		setForm(
-																			{
-																				...form,
-																				email: e
-																					.target
-																					.value,
-																			}
-																		)
-																	}
-																	type="email"
-																	className="form-style"
-																	placeholder="Email"
-																/>
-																<i className="input-icon uil uil-at" />
-															</div>
-															<div className="mt-2 form-group">
-																<input
-																	name="reg-password"
-																	type="password"
-																	placeholder="Jelszó"
-																	value={
-																		form.password
-																	}
-																	onChange={(
-																		e
-																	) =>
-																		setForm(
-																			{
-																				...form,
-																				password:
-																					e
-																						.target
-																						.value,
-																			}
-																		)
-																	}
-																	className="form-style"
-																/>
-																<i className="input-icon uil uil-lock-alt" />
-															</div>
-															<div className="mt-2 form-group">
-																<input
-																	name="reg-password-confirmation"
-																	type="password"
-																	placeholder="Jelszó ismét"
-																	value={
-																		form.passwordConfirmation
-																	}
-																	onChange={(
-																		e
-																	) =>
-																		setForm(
-																			{
-																				...form,
-																				passwordConfirmation:
-																					e
-																						.target
-																						.value,
-																			}
-																		)
-																	}
-																	className="form-style"
-																/>
-																<i className="input-icon uil uil-lock-alt" />
-															</div>
-															<button
-																name="reg-btn"
-																type="submit"
-																className="mt-4 btn"
+															<form
+																onSubmit={(e) => {
+																	e.preventDefault();
+																	handleRegister(
+																		form
+																	);
+																}}
 															>
-																Regisztrálj{" "}
-															</button>
-														</form>
+																<div className="form-group">
+																	<input
+																		name="reg-name"
+																		placeholder="Név"
+																		value={
+																			form.name
+																		}
+																		onChange={(
+																			e
+																		) =>
+																			setForm(
+																				{
+																					...form,
+																					name: e
+																						.target
+																						.value,
+																				}
+																			)
+																		}
+																		type="text"
+																		className="form-style"
+																	/>
+																	<i className="input-icon uil uil-user" />
+																</div>
+																<div className="mt-2 form-group">
+																	<input
+																		name="reg-email"
+																		value={
+																			form.email
+																		}
+																		onChange={(
+																			e
+																		) =>
+																			setForm(
+																				{
+																					...form,
+																					email: e
+																						.target
+																						.value,
+																				}
+																			)
+																		}
+																		type="email"
+																		className="form-style"
+																		placeholder="Email"
+																	/>
+																	<i className="input-icon uil uil-at" />
+																</div>
+																<div className="mt-2 form-group">
+																	<input
+																		name="reg-password"
+																		type="password"
+																		placeholder="Jelszó"
+																		value={
+																			form.password
+																		}
+																		onChange={(
+																			e
+																		) =>
+																			setForm(
+																				{
+																					...form,
+																					password:
+																						e
+																							.target
+																							.value,
+																				}
+																			)
+																		}
+																		className="form-style"
+																	/>
+																	<i className="input-icon uil uil-lock-alt" />
+																</div>
+																<div className="mt-2 form-group">
+																	<input
+																		name="reg-password-confirmation"
+																		type="password"
+																		placeholder="Jelszó ismét"
+																		value={
+																			form.passwordConfirmation
+																		}
+																		onChange={(
+																			e
+																		) =>
+																			setForm(
+																				{
+																					...form,
+																					passwordConfirmation:
+																						e
+																							.target
+																							.value,
+																				}
+																			)
+																		}
+																		className="form-style"
+																	/>
+																	<i className="input-icon uil uil-lock-alt" />
+																</div>
+																<button
+																	name="reg-btn"
+																	type="submit"
+																	className="mt-4 btn"
+																>
+																	Regisztrálj{" "}
+																</button>
+															</form>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -361,7 +350,7 @@ export const getServerSideProps = withSessionSsr(
 		if (session.user != undefined)
 			return {
 				redirect: {
-					destination: "/protected",
+					destination: "/",
 					permanent: false,
 				},
 			};

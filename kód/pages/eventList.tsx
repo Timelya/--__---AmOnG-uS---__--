@@ -7,7 +7,6 @@ import Navbar from "./Components/Navbar";
 import EventCard from "./Components/EventCard";
 import { GetServerSideProps } from "next";
 import DarkMode from "./Components/DarkMode";
-import EventAdd from "./Components/eventAdd";
 
 interface Event {
   events: {

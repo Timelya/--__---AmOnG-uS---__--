@@ -9,7 +9,6 @@ import { GetServerSideProps } from "next";
 import DarkMode from "./Components/DarkMode";
 import EventAdd from "./Components/eventAdd";
 import { useSelector } from 'react-redux';
-import Udv from "./Components/udv";
 
 interface Event {
   events: {
@@ -32,7 +31,6 @@ function Home(events: Event) {
         <DarkMode />
       </div>
       
-      <Udv />
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
       <div aria-label="Orange and tan hamster running in a metal wheel" role="img" className="wheel-and-hamster">
         <div className="wheel"></div>

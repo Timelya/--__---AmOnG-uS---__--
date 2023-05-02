@@ -21,6 +21,7 @@ async function main() {
 			},
 		},
 	});
+	
 	//seeds the event table
 	await prisma.event.create({
 		data: {
@@ -42,7 +43,6 @@ async function main() {
 
 		},
 	});
-
 	
 }
 main()
