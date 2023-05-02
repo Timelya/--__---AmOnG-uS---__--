@@ -9,9 +9,8 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const { id } = req.query;
-  const { name } = req.body;
-
+  const { id, name } = req.body;
+  console.log(id, name);
   try {
     // UPDATE
     await prisma.user.update({
@@ -19,12 +18,12 @@ export default async function handler(
         id: Number(id),
       },
       data: {
-        name,
+        name: name,
       },
     });
     res.status(200).json({ message: "Name updated" });
   } catch (error) {
     console.log(error);
-    res.status(400).json({ message: error });
+    res.status(400).json({ message: error as string});
   }
 }
