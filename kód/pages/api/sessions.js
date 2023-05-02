@@ -15,7 +15,6 @@ async function createSessionRoute(req, res) {
 		},
 	});
 	if (req.method === "POST") {
-		console.log("req.body" + JSON.stringify(req.body));
 		const email = req.body.data.email;
 		const password = req.body.data.password;
 		const foundUser = users.find(

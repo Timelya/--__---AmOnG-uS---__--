@@ -24,7 +24,6 @@ export default async function handler(
     })
     res.status(200).json({ message: 'Note created' })
   } catch (error) {
-    console.log(error)
     res.status(400).json({ message: error })
   }
 }

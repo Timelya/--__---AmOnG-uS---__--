@@ -23,7 +23,6 @@ export default async function handler(
     })
     res.status(200).json({ message: 'Sikeres regisztráció' })
   } catch (error) {
-    console.log(error)
     res.status(400).json({ message: error })
   }
 }

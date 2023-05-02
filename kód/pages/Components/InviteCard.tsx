@@ -29,7 +29,6 @@ function InviteCard(props: InviteCardProps) {
 					onClick={async (e) => {
 						e.preventDefault();
 						handleInvite(props.id, false);
-						//refresh the page
 						window.location.reload();
 					}}
 				>
@@ -51,7 +50,6 @@ function InviteCard(props: InviteCardProps) {
 }
 async function handleInvite(id: number, accept: boolean) {
 	try {
-		console.log(id, accept);
 		const response = await fetch("/api/handleInvite", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },

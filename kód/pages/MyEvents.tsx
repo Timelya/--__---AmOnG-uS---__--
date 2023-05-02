@@ -38,7 +38,6 @@ export const getServerSideProps = withSessionSsr(
 			res.end();
 			return { props: {} };
 		}
-		console.log(session.user);
 		let event = await prisma?.event.findMany({
 			select: {
 				id: true,

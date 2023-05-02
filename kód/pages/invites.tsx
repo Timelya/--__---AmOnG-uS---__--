@@ -24,7 +24,6 @@ interface InvitePageProps {
 
 
 function Home(props: InvitePageProps) {
-	console.log(props);
 
 	return (
 		<>
@@ -49,7 +48,6 @@ function Home(props: InvitePageProps) {
 }
 export const getServerSideProps = withSessionSsr(
 	async ({ req, res }: { req: any; res: any }) => {
-		console.log(req.session);
 		if (!req.session) {
 			return {
 				redirect: {
@@ -77,7 +75,6 @@ export const getServerSideProps = withSessionSsr(
 		});
 
 		invites = JSON.parse(JSON.stringify(invites));
-		console.log(eventnames);
 		return {
 			props: {
 				invites,
