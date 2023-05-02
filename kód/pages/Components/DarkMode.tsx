@@ -29,6 +29,7 @@ function DarkMode() {
     //normal
     else {
       body.style.backgroundColor = '#333';
+
       body.style.color = '#efefaa';
       body.style.marginLeft = '100px';
       body.style.marginTop = '50px';

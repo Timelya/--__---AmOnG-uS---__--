@@ -27,3 +27,11 @@ model event {
 
   @@index([organizerId], map: "event_organizerId_fkey")
 }
+
+model invites {
+  id       Int @id @default(autoincrement())
+  eventid  Int
+  userid   Int
+  accepted Int @default(0)
+  
+}

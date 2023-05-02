@@ -22,6 +22,7 @@ function EventCard(props: EventCardProps) {
   </div>
 </div>
 
+
 	);
 }
 export default EventCard;

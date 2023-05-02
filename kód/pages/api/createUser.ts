@@ -21,7 +21,7 @@ export default async function handler(
         password
       }
     })
-    res.status(200).json({ message: 'Note created' })
+    res.status(200).json({ message: 'Sikeres regisztráció' })
   } catch (error) {
     console.log(error)
     res.status(400).json({ message: error })
