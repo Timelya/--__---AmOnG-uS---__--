@@ -96,7 +96,6 @@ const Register: NextPage<User> = ({ users, session }) => {
 					x.email == data.email && x.password == sha256(data.password)
 			);
 			if (user) {
-				
 				const response = await fetch("/api/sessions", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
@@ -136,10 +135,19 @@ const Register: NextPage<User> = ({ users, session }) => {
 								<div className="py-5 text-center col-12 align-self-center">
 									<div className="pt-5 pb-5 text-center section pt-sm-2">
 										<div className="pb-3 mb-0">
-											<div className="inline pr-4 text-right">Jelentkezz be</div>
-											<div className="inline pl-4 text-left">Regisztrálj</div>
+											<div className="inline pr-4 text-right">
+												Jelentkezz be
+											</div>
+											<div className="inline pl-4 text-left">
+												Regisztrálj
+											</div>
 										</div>
-										<input className="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+										<input
+											className="checkbox"
+											type="checkbox"
+											id="reg-log"
+											name="reg-log"
+										/>
 										<label htmlFor="reg-log" />
 										<div className="mx-auto card-3d-wrap">
 											<div className="card-3d-wrapper">
@@ -149,13 +157,27 @@ const Register: NextPage<User> = ({ users, session }) => {
 															<div className="pb-3 mb-4 text-lg">
 																Jelentkezz be
 															</div>
-															<form onSubmit={(e) => {e.preventDefault(); handleLogin(form);}}>
+															<form
+																onSubmit={(
+																	e
+																) => {
+																	e.preventDefault();
+																	handleLogin(
+																		form
+																	);
+																}}
+															>
 																<div className="form-group">
-																	<input type="email" className="form-style"
-																		value={form.email}
+																	<input
+																		type="email"
+																		className="form-style"
+																		value={
+																			form.email
+																		}
 																		onChange={(
 																			e
-																		) =>setForm(
+																		) =>
+																			setForm(
 																				{
 																					...form,
 																					email: e
@@ -194,7 +216,8 @@ const Register: NextPage<User> = ({ users, session }) => {
 																</div>
 																<button
 																	type="submit"
-																	className="mt-4 btn" >
+																	className="mt-4 btn"
+																>
 																	Bejelentkezés{" "}
 																</button>
 															</form>
@@ -208,7 +231,9 @@ const Register: NextPage<User> = ({ users, session }) => {
 																Regisztrálj
 															</div>
 															<form
-																onSubmit={(e) => {
+																onSubmit={(
+																	e
+																) => {
 																	e.preventDefault();
 																	handleRegister(
 																		form

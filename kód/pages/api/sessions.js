@@ -37,14 +37,4 @@ async function createSessionRoute(req, res) {
 	}
 	return res.status(404).send("");
 }
-/*
-const { username } = await req.body;
 
-  try {
-    const
-
-    const user = { isLoggedIn: true, login, avatarUrl: avatar_url };
-    req.session.user = user;
-    await req.session.save();
-    res.json(user);
-*/

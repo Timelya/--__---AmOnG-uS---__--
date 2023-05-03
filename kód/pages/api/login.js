@@ -1,4 +1,3 @@
-// noinspection JSFileReferences
 import { withIronSessionApiRoute } from "iron-session/next";
 
 export default withIronSessionApiRoute(

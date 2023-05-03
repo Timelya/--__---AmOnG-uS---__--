@@ -11,10 +11,15 @@ export default async function handler(
 ) {
   const { id, name } = req.body;
   try {
+    const userToBeDeleted = await prisma.user.findFirst({
+			where: {
+				name: name,
+			},
+		});
     // UPDATE
     await prisma.user.update({
       where: {
-        id: Number(id),
+        id: userToBeDeleted.id as number,
       },
       data: {
         name: name,
