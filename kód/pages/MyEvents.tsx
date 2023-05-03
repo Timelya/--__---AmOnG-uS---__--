@@ -44,7 +44,7 @@ export const getServerSideProps = withSessionSsr(
 				name: true,
 				start: true,
 				end: true,
-                organizerId: true,
+				
 			},
             where: {
                 organizerId: session.user.id
