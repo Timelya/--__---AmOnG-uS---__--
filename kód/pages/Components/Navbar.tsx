@@ -44,6 +44,14 @@ function Navbar() {
                         </NavText>
                     </NavItem>
 
+                    <NavItem eventKey="Meghivó küldés" onClick={() => router.push('/inviteSend')}>
+                        <NavIcon><Icon icon="material-symbols:send-rounded" className="pl-2 text-4xl ..." onClick={() => router.push('/inviteSend')}/></NavIcon>
+
+                        <NavText>
+                            Meghivó küldés
+                        </NavText>
+                    </NavItem>
+
                     <NavItem eventKey="Rendezvény lista" onClick={() => router.push('/eventList')}>
                         <NavIcon><Icon icon="material-symbols:featured-play-list-outline" className="pl-2 text-4xl ..."  onClick={() => router.push('/eventList')}/></NavIcon>
                         <NavText>
