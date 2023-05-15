@@ -9,7 +9,10 @@ import moment from "moment";
 import Navbar from "./Components/Navbar";
 import DarkMode from "./Components/DarkMode";
 import { IonDatetime } from '@ionic/react';
-import DropDownMenu from"./DropDownMenu";
+//import DropDownMenu from "./DropDownMenu";
+import { Dropdown } from "@nextui-org/react";
+import React from "react";
+import DropdownItem from "@nextui-org/react/types/dropdown/dropdown-item";
 
 
 
@@ -22,10 +25,7 @@ interface FormData {
 
 interface Event {
     events: {
-        id: string;
-        name: string;
-        start: number;
-        end: number;
+
     };
 }
 
@@ -36,9 +36,17 @@ interface Invite {
         userid: string;
         accepted: string;
     }
+    events :{
+        id: string;
+        name: string;
+    }[]
+    users :{
+        id: string;
+        name: string;
+    }[]
 }
 
-const MakeEvent: NextPage<Invite> = ({ invites }) => {
+const InviteSend: NextPage<Invite> = ({ invites, events, users }) => {
     const [form, setForm] = useState<FormData>({
         id: "",
         eventid: "",
@@ -50,32 +58,55 @@ const MakeEvent: NextPage<Invite> = ({ invites }) => {
         router.replace(router.asPath);
     };
     function handleSubmit(data: FormData) {
-        if (!data.eventid) {
-            alert("Esemély neve nem lehet üres");
-            return;
-        }
-        if (!data.userid) {
-            alert("Üres meghívó nem lehet");
-            return;
-        }
+        // if (!data.eventid) {
+        //     alert("Esemély neve nem lehet üres");
+        //     return;
+        // }
+        // if (!data.userid) {
+        //     alert("Üres meghívó nem lehet");
+        //     return;
+        // }
+        console.log(data);
         // CREATE
 
-        fetch("api/createInvite", {
-            body: JSON.stringify(data),
-            headers: {
-                "Content-Type": "application/json",
-            },
-            method: "POST",
-        }).then(() => {
-            setForm({
-                id: "",
-                eventid: "",
-                userid: "",
-                accepted: "0"
-            });
-            refreshData();
-        });
+        // fetch("api/createInvite", {
+        //     body: JSON.stringify(data),
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //     },
+        //     method: "POST",
+        // }).then(() => {
+        //     setForm({
+        //         id: "",
+        //         eventid: "",
+        //         userid: "",
+        //         accepted: "0"
+        //     });
+        //     refreshData();
+        // });
     }
+
+    const eventsMenu = events.map(x => x.id)
+    const [selectedUsers, setSelectedUsers] = React.useState(new Set(["text"]));
+
+    const selectedUsersValue = React.useMemo(
+        () => Array.from(selectedUsers).join(", ").replaceAll("_", " "),
+        [selectedUsers]
+    );
+
+    const [selected, setSelected] = React.useState(new Set(["text"]));
+
+    const selectedValue = React.useMemo(
+        () => Array.from(selected).join(", ").replaceAll("_", " "),
+        [selected]
+    );
+    
+    const menuItems = [
+        { key: "new", name: "New File" },
+        { key: "copy", name: "Copy Link" },
+        { key: "edit", name: "Edit File" },
+        { key: "delete", name: "Delete File" },
+    ];
     return (
         <>
             <Navbar />
@@ -107,29 +138,47 @@ const MakeEvent: NextPage<Invite> = ({ invites }) => {
 
                             <div style={{ color: "#9ca3af" }}>
                                 <div className="form">
-                                    <input
-                                        type="dropdown"
-                                        placeholder="Esemény neve"
-                                        value={form.eventid}
-                                        onChange={(e) => setForm({ ...form, eventid: e.target.value })}
-                                        className="input" />
-                                    <span className="input-border"></span>
+                                    
+                                    <Dropdown>
+                                        <Dropdown.Button flat>{selectedValue}</Dropdown.Button>
+                                        <Dropdown.Menu aria-label="Dynamic Actions" items={menuItems}
+                                            // onChange=(e) => setForm({ ...form, eventid: e.target.value })
+                                            color="secondary"
+                                            disallowEmptySelection
+                                            selectionMode="single"
+                                            selectedKeys={selected}
+                                            onSelectionChange={setSelected}>
+                                                {
+                                                    events.map(x =><Dropdown.Item key={x.id}>{x.name}</Dropdown.Item>)
+                                                }
+                                            {/* {(item) => (
+                                                <Dropdown.Item
+                                                    key={item.key}
+                                                >
+                                                    {item.name}
+                                                </Dropdown.Item>
+                                            )} */}
+                                        </Dropdown.Menu>
+                                    </Dropdown>
+                                    <Dropdown>
+                                        <Dropdown.Button flat>{selectedUsersValue}</Dropdown.Button>
+                                        <Dropdown.Menu aria-label="Dynamic Actions" items={menuItems}
+                                            color="primary"                                            
+                                            selectionMode="mutliple"
+                                            selectedKeys={selectedUsers}
+                                            onSelectionChange={setSelectedUsers}>
+                                            {
+                                                users.map(x =><Dropdown.Item key={x.id}>{x.name}</Dropdown.Item>)
+                                            }
+                                        </Dropdown.Menu>
+                                    </Dropdown>
                                 </div>
                                 <div className="form">
-                                    <DropDownMenu 
-                                        
-                                    />                                    
-                                    <input
-                                        type="dropdown"
-                                        placeholder="Esemény kezdete"
-                                        value={form.userid}
-                                        onChange={(e) =>
-                                            setForm({ ...form, userid: e.target.value })}
-                                        className="input" />
+
                                     <span className="input-border"></span>
                                 </div>
                                 <p style={{ fontSize: 1 }}><br></br></p>
-                                
+
                             </div>
                             <button type="submit" className="Susbutton">
                                 <svg height="36px" width="36px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
@@ -155,22 +204,29 @@ const MakeEvent: NextPage<Invite> = ({ invites }) => {
 };
 export const getServerSideProps: GetServerSideProps = async () => {
     // READ all notes from DB
-    let events = await prisma?.invites.findMany({
+    
+    let events = await prisma?.event.findMany({
         select: {
-            id: true,
-            eventid: true,
-            userid: true,
-            accepted: true,
+          id: true,
+          name: true
         },
-    });
+      });
+    let users = await prisma?.user.findMany({
+        select:{
+            id: true,
+            name: true
+        }
+    })
+    users =  JSON.parse(JSON.stringify(users));
     events = JSON.parse(JSON.stringify(events));
     return {
         props: {
             events,
+            users,
         },
     };
 };
-export default MakeEvent;
+export default InviteSend;
 
 
 
